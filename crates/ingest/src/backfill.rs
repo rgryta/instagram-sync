@@ -5,17 +5,18 @@
 //! rate-limited: a pass spends at most `request_budget` pages and the day at most
 //! `backfill_daily_requests`, counted in `sync_state`.
 //!
-//! The walk only goes one way. A thread opens at its newest message, so each pass
-//! re-walks the history it already holds before it reaches new ground, and asks for
-//! `depth` pages where the last pass managed fewer. The re-walk stores nothing:
-//! `insert_messages` counts only rows that were genuinely new.
+//! A turn resumes just older than a message the archive holds: the thread's cursor when
+//! it has one, else its oldest stored message. So a turn costs only the pages it gains.
+//! (It used to re-walk from the newest page every time, and a thread `n` pages deep cost
+//! `n` requests before it gained one.) A thread holding nothing starts at its newest page.
+//! Setting the cursor to a message just after a hole makes the next turns walk down
+//! through the hole; the re-read of what is already stored inserts nothing.
 //!
 //! Termination is a page that says it has nothing older behind it. A short page is not
 //! the end: the server picks its own page size.
 
 use std::collections::HashMap;
 
-use instagram_core::models::StoredThread;
 use instagram_core::store;
 use serde_json::Value;
 use sqlx::PgPool;
@@ -35,15 +36,10 @@ pub struct BackfillTally {
     pub threads_finished: u64,
 }
 
-/// How many pages deep the last pass got, from `backfill_cursor`, which holds a page
-/// count rather than one of Instagram's cursors. Anything else (the REST cursor this
-/// column used to hold) starts again from the top.
-fn depth(thread: &StoredThread) -> usize {
-    thread
-        .backfill_cursor
-        .as_deref()
-        .and_then(|raw| raw.trim().parse::<i64>().ok())
-        .map_or(0, |depth| depth.max(0) as usize)
+/// A resume point `older_than_message_id` honours. A REST-era numeric `item_id` would be
+/// answered with an empty last page and finish the thread on the spot.
+fn resumable(id: &str) -> bool {
+    !id.is_empty() && !id.bytes().all(|b| b.is_ascii_digit())
 }
 
 /// A string or numeric id, the way Python's `str()` would print it.
@@ -79,47 +75,62 @@ pub async fn backfill_once(
         .filter_map(|raw| Some((id(raw.get("thread_id"))?, id(raw.get("thread_fbid"))?)))
         .collect();
 
-    // Oldest-polled first, so the crawl spreads across the corpus.
+    // Round-robin on each thread's last turn, so the crawl spreads across the corpus.
     for thread in store::threads_needing_backfill(pool, account_id, 10).await? {
+        if tally.requests >= budget {
+            break;
+        }
         let Some(handle) = handles.get(&thread.thread_id) else {
             tracing::debug!("no inbox entry for {}; cannot address it", thread.thread_id);
+            // Stamped all the same, or it would hold the head of the queue for good.
+            let cursor = thread.backfill_cursor.as_deref();
+            store::set_backfill(pool, account_id, &thread.thread_id, cursor, false).await?;
             continue;
         };
-        let reached = depth(&thread);
-        // Go deeper than last time, or this pass re-reads exactly what that one did.
-        let (payloads, _met) = source
-            .thread(handle, None, reached + budget as usize, BACKFILL_RESERVE)
-            .await?;
+        let pages = (budget - tally.requests) as usize;
+        let from = match thread.backfill_cursor.filter(|c| resumable(c)) {
+            Some(cursor) => Some(cursor),
+            None => store::oldest_item_id(pool, account_id, &thread.thread_id)
+                .await?
+                .filter(|id| resumable(id)),
+        };
+        let payloads = match &from {
+            Some(from) => {
+                source
+                    .older(handle, &thread.thread_id, from, pages, BACKFILL_RESERVE)
+                    .await?
+            }
+            None => {
+                source
+                    .thread(handle, None, pages - 1, BACKFILL_RESERVE)
+                    .await?
+                    .0
+            }
+        };
         tally.requests += payloads.len() as u64;
 
+        let mut oldest = from;
         for payload in &payloads {
             let messages = normalize::messages_from_thread(payload, account_id)?;
+            // Oldest first, so the first of the last page is the furthest reached.
+            if let Some(first) = messages.first() {
+                oldest = Some(first.item_id.clone());
+            }
             if !messages.is_empty() {
                 tally.messages += store::insert_messages(pool, &messages).await?;
             }
         }
 
         // Persisted after the pages are committed, so an interrupted pass resumes at a
-        // depth it has already stored. Re-reading is free; skipping is invisible.
+        // message it has already stored. Re-reading is free; skipping is invisible.
         let done = payloads
             .last()
             .is_some_and(|last| normalize::older_page_cursor(last).is_none());
-        let depth = reached.max(payloads.len()).to_string();
-        store::set_backfill(
-            pool,
-            account_id,
-            &thread.thread_id,
-            (!done).then_some(depth.as_str()),
-            done,
-        )
-        .await?;
+        let cursor = (!done).then_some(oldest).flatten();
+        store::set_backfill(pool, account_id, &thread.thread_id, cursor.as_deref(), done).await?;
         if done {
             tally.threads_finished += 1;
             tracing::info!("backfill reached the start of {}", thread.thread_id);
-        }
-
-        if tally.requests >= budget {
-            break;
         }
     }
     Ok(tally)

@@ -119,10 +119,10 @@ pub use aliases::{delete_alias, list_aliases, set_alias};
 pub use directory::{Directory, DirectoryAccount, DirectoryPerson, DirectoryThread};
 pub use ingest::{
     backfill_spent, clear_auth_error, get_thread, held_since, insert_messages, load_session,
-    mark_absent, mark_polled, mark_present, newest_message, record_auth_error, record_revision,
-    record_sync, release_stranded, save_session, set_backfill, set_watermark, spend_backfill,
-    stored_window, text_differs, threads_needing_backfill, upsert_account, upsert_participants,
-    upsert_thread,
+    mark_absent, mark_polled, mark_present, newest_message, oldest_item_id, record_auth_error,
+    record_revision, record_sync, release_stranded, save_session, set_backfill, set_watermark,
+    spend_backfill, stored_window, text_differs, threads_needing_backfill, upsert_account,
+    upsert_participants, upsert_thread,
 };
 pub use messages::{
     MessagePage, Resolved, SearchHit, SearchPage, get_history, list_revisions, list_shares,

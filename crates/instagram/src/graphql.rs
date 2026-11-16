@@ -100,6 +100,22 @@ pub fn messages_variables(thread_fbid: &str, cursor: &str) -> Value {
     })
 }
 
+/// The page of `thread_fbid`'s messages just older than `message_id`, a `mid.$…` id.
+/// Probed 2026-11-16: the 20 messages before it, matching the archive. A REST-era
+/// numeric `item_id` answers as an empty last page, so it must never be passed here.
+pub fn older_variables(thread_fbid: &str, message_id: &str) -> Value {
+    json!({
+        "after": null,
+        "before": null,
+        "first": PAGE,
+        "last": null,
+        "newer_than_message_id": null,
+        "older_than_message_id": message_id,
+        "id": thread_fbid,
+        "__relay_internal__pv__IGDInitialMessagePageCountrelayprovider": PAGE,
+    })
+}
+
 /// The form body, as mautrix's `MakeGraphQLRequest` sends it for Instagram. `jazoest` is
 /// the page's checksum of `fb_dtsg`: "2" and the sum of its bytes.
 pub fn form(config: &PageConfig, doc: &Doc, variables: &Value) -> Vec<(&'static str, String)> {

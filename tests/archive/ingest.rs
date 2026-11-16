@@ -356,28 +356,23 @@ db_test!(
 );
 
 db_test!(
-    threads_needing_backfill_puts_the_shallowest_first_before_the_least_visited,
+    threads_needing_backfill_takes_turns_before_it_looks_at_the_poll,
     |f| {
         store::upsert_account(&f.pool, &account(ME, None))
             .await
             .unwrap();
-        for thread_id in ["DEEP", "MID", "OLDCURSOR", "FRESH"] {
+        for thread_id in ["QUIET", "BUSY1", "BUSY2"] {
             store::upsert_thread(&f.pool, &listing(thread_id, ME))
                 .await
                 .unwrap();
         }
-        // DEEP is the quiet thread the poll never visits; FRESH was just polled.
-        store::mark_polled(&f.pool, ME, "MID").await.unwrap();
-        store::mark_polled(&f.pool, ME, "OLDCURSOR").await.unwrap();
-        store::mark_polled(&f.pool, ME, "FRESH").await.unwrap();
-        store::set_backfill(&f.pool, ME, "DEEP", Some("191"), false)
+        // QUIET is never polled, so by the poll alone it would come first forever.
+        store::mark_polled(&f.pool, ME, "BUSY1").await.unwrap();
+        store::mark_polled(&f.pool, ME, "BUSY2").await.unwrap();
+        store::set_backfill(&f.pool, ME, "QUIET", Some("mid.$q"), false)
             .await
             .unwrap();
-        store::set_backfill(&f.pool, ME, "MID", Some("40"), false)
-            .await
-            .unwrap();
-        // A cursor from the REST era is not a page count, so it counts as depth 0.
-        store::set_backfill(&f.pool, ME, "OLDCURSOR", Some("QVFIabc"), false)
+        store::set_backfill(&f.pool, ME, "BUSY1", Some("mid.$b"), false)
             .await
             .unwrap();
 
@@ -385,7 +380,7 @@ db_test!(
             .await
             .unwrap();
 
-        assert_eq!(thread_ids(&threads), ["OLDCURSOR", "FRESH", "MID", "DEEP"]);
+        assert_eq!(thread_ids(&threads), ["BUSY2", "QUIET", "BUSY1"]);
     }
 );
 
