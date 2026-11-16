@@ -138,6 +138,9 @@ async fn follow(
                 tracing::info!("live socket subscribed, {behind:?} behind the latest");
             }
             // The type name only: the rest carries names and message text.
+            Some(Event::Delta { typename, .. }) if archives_nothing(&typename) => {
+                tracing::debug!("live: {typename}, ignored");
+            }
             Some(Event::Delta { typename, .. }) => {
                 tracing::info!("live: {typename}");
                 nudge.send();
@@ -152,10 +155,32 @@ async fn follow(
     }
 }
 
+/// Deltas about nothing the archive keeps: someone coming online, or reading a thread.
+/// A nudge for one is a quick pass that finds nothing. Unknown types still nudge.
+fn archives_nothing(typename: &str) -> bool {
+    matches!(
+        typename,
+        "SlideUQPPUserReachabilityStatus" | "SlideUQPPReadReceipt"
+    )
+}
+
 #[cfg(test)]
 mod tests {
-    use super::Nudge;
+    use super::{Nudge, archives_nothing};
     use std::time::Duration;
+
+    #[test]
+    fn presence_and_read_receipts_do_not_nudge_but_anything_else_does() {
+        assert!(archives_nothing("SlideUQPPUserReachabilityStatus"));
+        assert!(archives_nothing("SlideUQPPReadReceipt"));
+        for kind in [
+            "SlideUQPPNewMessage",
+            "SlideUQPPCreateReaction",
+            "SlideUQPPSomethingNew",
+        ] {
+            assert!(!archives_nothing(kind), "{kind}");
+        }
+    }
 
     #[tokio::test]
     async fn a_nudge_is_pending_until_taken_and_a_burst_is_one_nudge() {
