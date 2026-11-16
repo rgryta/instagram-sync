@@ -19,7 +19,7 @@ path = "src/bin/instagram-ingest.rs"
 chrono.workspace = true
 instagram-client = { path = "../instagram" }
 instagram-core.workspace = true
-rand = "0.9.5"
+rand = "0.10.3"
 serde_json.workspace = true
 sqlx.workspace = true
 thiserror.workspace = true
