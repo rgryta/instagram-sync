@@ -238,7 +238,9 @@ impl InstagramMcp {
 
     #[tool(
         name = "search",
-        description = "Full-text search the archive, best match first. The caption and author \
+        description = "Full-text search the archive, best match first. Ignores accents and \
+                       forgives a typo or a different word ending; a \"quoted phrase\" or -word \
+                       stays exact. The caption and author \
                        handle of a shared reel or post are indexed alongside typed text, so both \
                        are searchable. `person` narrows by sender and takes an alias, a handle, a \
                        whole display name or a raw id, and `after`/`before` (ISO 8601 or a Unix \

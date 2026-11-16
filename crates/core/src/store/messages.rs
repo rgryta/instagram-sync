@@ -146,7 +146,30 @@ pub async fn get_history(
     MessagePage::from_rows(rows)
 }
 
-/// Full text over `message.search`, ranked, with a headline per hit.
+/// `$1` against a message: every word exactly, accents folded, or — for a plain query of
+/// three or more characters — every word within a typo or a different ending (pg_trgm
+/// word similarity over the folded text, which `message_fold_trgm_idx` indexes). Quoted
+/// phrases, `-exclusions` and `or` keep their strict meaning.
+macro_rules! text_match {
+    () => {
+        "(search @@ websearch_to_tsquery('simple_fold', $1)
+           OR (char_length(btrim($1)) >= 3 AND $1 !~* '\"|(^|\\s)-|\\sor\\s'
+               AND search_fold(text) %> (regexp_split_to_array(btrim(search_fold($1)), '\\s+'))[1]
+               AND search_fold(text) %> ALL (regexp_split_to_array(btrim(search_fold($1)), '\\s+'))))"
+    };
+}
+
+/// Exact hits above fuzzy ones, each ordered by how well it matched.
+macro_rules! text_rank {
+    () => {
+        "CASE WHEN search @@ websearch_to_tsquery('simple_fold', $1)
+              THEN 1::real + ts_rank_cd(search, websearch_to_tsquery('simple_fold', $1))
+              ELSE word_similarity(search_fold($1), search_fold(text)) END"
+    };
+}
+
+/// Full text over `message.search`, ranked, with a headline per hit. Ignores accents and
+/// forgives a typo or a different word ending (see `text_match!`).
 ///
 /// An empty query returns nothing rather than everything: `websearch_to_tsquery` yields
 /// an empty tsquery that matches no row, and that is the honest answer to a search for
@@ -181,11 +204,15 @@ pub async fn search_messages(
         ", ",
         total_matches!(),
         ",
-               ts_rank_cd(search, websearch_to_tsquery('simple', $1)) AS rank,
-               ts_headline('simple', text, websearch_to_tsquery('simple', $1),
+               ",
+        text_rank!(),
+        " AS rank,
+               ts_headline('simple_fold', text, websearch_to_tsquery('simple_fold', $1),
                            'MaxFragments=1,MaxWords=25,MinWords=8') AS snippet
           FROM message
-         WHERE search @@ websearch_to_tsquery('simple', $1)
+         WHERE ",
+        text_match!(),
+        "
            AND ($2::text IS NULL OR account_id = $2)
            AND ($3::text IS NULL OR thread_id = $3)
            AND ($4::text IS NULL OR share_kind = $4)
