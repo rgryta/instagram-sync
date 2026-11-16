@@ -4,7 +4,7 @@ use instagram_client::graphql::{
     self, GraphqlError, INBOX, MESSAGES, THREAD, THREAD_LIST, data_field, form,
 };
 use instagram_client::page::PageConfig;
-use serde_json::json;
+use serde_json::{Value, json};
 
 fn config() -> PageConfig {
     PageConfig {
@@ -65,6 +65,10 @@ fn paging_names_the_cursor_and_the_viewer() {
     assert_eq!(older["id"], "1100000000000001");
     assert_eq!(older["after"], "c2");
     assert_eq!(older["first"], 20);
+    let resumed = graphql::older_variables("1100000000000001", "mid.$abc");
+    assert_eq!(resumed["id"], "1100000000000001");
+    assert_eq!(resumed["older_than_message_id"], "mid.$abc");
+    assert_eq!(resumed["after"], Value::Null);
     assert_eq!(
         graphql::inbox_variables(&config())["device_id_for_iris_subscription"],
         "bbbbbbbb-0000-4000-8000-000000000002"

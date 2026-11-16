@@ -49,6 +49,10 @@ pub const MIGRATIONS: &[(&str, &str)] = &[
         "0007_fuzzy_search.sql",
         include_str!("../../../db-migrations/pg/0007_fuzzy_search.sql"),
     ),
+    (
+        "0008_one_id_per_message.sql",
+        include_str!("../../../db-migrations/pg/0008_one_id_per_message.sql"),
+    ),
 ];
 
 const SCHEMA_MIGRATION_DDL: &str = "

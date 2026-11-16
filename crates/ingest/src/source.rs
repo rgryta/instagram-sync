@@ -51,6 +51,18 @@ pub trait Source {
         reserve: f64,
     ) -> Result<(Vec<Value>, bool), WebError>;
 
+    /// Up to `pages` pages of the messages older than `message_id` (a `mid.$…` id, never
+    /// a REST-era number), newest first, each in the thread query's shape under
+    /// `thread_id`. Stops early at a page with nothing older behind it.
+    async fn older(
+        &mut self,
+        thread_fbid: &str,
+        thread_id: &str,
+        message_id: &str,
+        pages: usize,
+        reserve: f64,
+    ) -> Result<Vec<Value>, WebError>;
+
     /// Forget this pass's page and inbox, as the harvester's `aclose()` did. Returns the
     /// cookie jar's JSON when Instagram rotated a cookie, for the caller to save.
     fn end_pass(&mut self) -> Option<String>;
@@ -278,6 +290,52 @@ impl Source for WebSource {
             out.push(page);
         }
         Ok((out, reached))
+    }
+
+    async fn older(
+        &mut self,
+        thread_fbid: &str,
+        thread_id: &str,
+        message_id: &str,
+        pages: usize,
+        reserve: f64,
+    ) -> Result<Vec<Value>, WebError> {
+        let yields = reserve > 0.0;
+        let mut out = Vec::new();
+        let mut from = message_id.to_owned();
+        while out.len() < pages && !(yields && self.nudge.pending()) {
+            let config = self.config(reserve).await?;
+            let answer = self
+                .ask(
+                    &config,
+                    reserve,
+                    &graphql::MESSAGES,
+                    graphql::MESSAGES_FIELD,
+                    graphql::older_variables(thread_fbid, &from),
+                )
+                .await?;
+            let Some(connection) = answer
+                .as_ref()
+                .and_then(|o| o.pointer("/as_ig_direct_thread/slide_messages"))
+                .filter(|c| c.is_object())
+            else {
+                break;
+            };
+            let page = json!({"thread_id": thread_id, "slide_messages": connection});
+            // Edges arrive newest first: the last is where the next page starts.
+            let oldest = connection
+                .get("edges")
+                .and_then(Value::as_array)
+                .and_then(|edges| edges.last())
+                .and_then(|edge| id(edge.pointer("/node/message_id")));
+            let more = normalize::older_page_cursor(&page).is_some();
+            out.push(page);
+            match oldest {
+                Some(next) if more && next != from => from = next,
+                _ => break,
+            }
+        }
+        Ok(out)
     }
 
     fn end_pass(&mut self) -> Option<String> {

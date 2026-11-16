@@ -312,6 +312,48 @@ impl Source for Fake {
         Ok((payloads, reached))
     }
 
+    async fn older(
+        &mut self,
+        thread_fbid: &str,
+        thread_id: &str,
+        message_id: &str,
+        pages: usize,
+        reserve: f64,
+    ) -> Result<Vec<Value>, WebError> {
+        self.calls.push(Call {
+            endpoint: "older",
+            fbid: Some(thread_fbid.to_owned()),
+            until: Some(message_id.to_owned()),
+            pages,
+            reserve,
+        });
+        let thread = self
+            .threads
+            .iter()
+            .find(|t| t.fbid == thread_fbid)
+            .expect("an fbid the fake issued");
+        assert_eq!(thread.thread_id, thread_id);
+        let Some(at) = thread
+            .items
+            .iter()
+            .position(|node| node["message_id"] == message_id)
+        else {
+            return Ok(Vec::new());
+        };
+        let mut payloads = Vec::new();
+        let mut offset = at + 1;
+        while payloads.len() < pages {
+            let end = (offset + self.page_size).min(thread.items.len());
+            let page = &thread.items[offset.min(end)..end];
+            payloads.push(Self::page(thread, offset, page));
+            if end >= thread.items.len() {
+                break;
+            }
+            offset = end;
+        }
+        Ok(payloads)
+    }
+
     fn end_pass(&mut self) -> Option<String> {
         self.calls.push(Call::bare("end_pass"));
         self.rotated.take()
@@ -583,36 +625,68 @@ db_test!(backfill_pages_backwards_until_nothing_older_is_left, |f| {
 });
 
 db_test!(
-    the_budget_stops_the_pass_and_the_next_one_goes_deeper,
+    a_stopped_pass_resumes_below_what_it_stored_and_pays_only_for_new_pages,
     |f| {
-        // A pass that stopped early re-walks what it read before reaching new ground, so it
-        // has to ask for more depth than last time or the thread never finishes. The
-        // re-walk stores nothing: `insert_messages` counts only rows that were new.
         let mut fake = fake(vec![FakeThread::new("T1", items(20))], 4);
         seed(&fake, &f.pool).await;
 
         let tally = backfill_once(&f.pool, &mut fake, ACCOUNT, 2).await.unwrap();
 
-        assert_eq!(tally.requests, 3); // the newest page, plus the two the budget bought
-        assert_eq!(stored_ids(&f.pool, "T1").await.len(), 12);
+        assert_eq!(tally.requests, 2); // the newest page, then one older
+        assert_eq!(stored_ids(&f.pool, "T1").await.len(), 8);
         let thread = store::get_thread(&f.pool, ACCOUNT, "T1")
             .await
             .unwrap()
             .unwrap();
-        assert_eq!(thread.backfill_cursor.as_deref(), Some("3"));
+        assert_eq!(thread.backfill_cursor.as_deref(), Some("item-0012"));
         assert!(!thread.backfill_done);
 
         fake.calls.clear();
         let second = backfill_once(&f.pool, &mut fake, ACCOUNT, 2).await.unwrap();
 
-        assert_eq!(fake.calls_to("thread")[0].pages, 5);
-        assert_eq!(second.messages, 8);
+        // No re-walk from the top: two requests, both new ground.
+        assert!(fake.calls_to("thread").is_empty());
+        let call = fake.calls_to("older")[0].clone();
+        assert_eq!(call.until.as_deref(), Some("item-0012"));
+        assert_eq!((second.requests, second.messages), (2, 8));
+
+        fake.calls.clear();
+        let third = backfill_once(&f.pool, &mut fake, ACCOUNT, 2).await.unwrap();
+
+        assert_eq!(
+            (third.requests, third.messages, third.threads_finished),
+            (1, 4, 1)
+        );
         assert_eq!(stored_ids(&f.pool, "T1").await.len(), 20);
         let thread = store::get_thread(&f.pool, ACCOUNT, "T1")
             .await
             .unwrap()
             .unwrap();
         assert!(thread.backfill_done);
+        assert_eq!(thread.backfill_cursor, None);
+    }
+);
+
+db_test!(
+    a_page_count_or_numeric_cursor_resumes_from_the_oldest_stored_message,
+    |f| {
+        // "3" is what 0.2.2 left behind; a numeric id is what the REST era stored. Either
+        // passed to `older_than_message_id` would read as the start of the thread.
+        let mut fake = fake(vec![FakeThread::new("T1", items(20))], 4);
+        seed(&fake, &f.pool).await;
+        backfill_once(&f.pool, &mut fake, ACCOUNT, 1).await.unwrap();
+        store::set_backfill(&f.pool, ACCOUNT, "T1", Some("3"), false)
+            .await
+            .unwrap();
+
+        fake.calls.clear();
+        backfill_once(&f.pool, &mut fake, ACCOUNT, 1).await.unwrap();
+
+        assert_eq!(
+            fake.calls_to("older")[0].until.as_deref(),
+            Some("item-0016"),
+            "the oldest message the first pass stored"
+        );
     }
 );
 
@@ -807,7 +881,8 @@ db_test!(a_quick_pass_reads_the_inbox_head_and_never_backfills, |f| {
     runner.pass(&f.pool, &mut fake, &settings).await;
     assert!(
         fake.calls_to("thread")
-            .iter()
+            .into_iter()
+            .chain(fake.calls_to("older"))
             .any(|c| c.reserve == BACKFILL_RESERVE)
     );
 });
@@ -825,7 +900,8 @@ db_test!(the_daily_backfill_ceiling_survives_a_restart, |f| {
     ]);
     let backfilled = |fake: &Fake| {
         fake.calls_to("thread")
-            .iter()
+            .into_iter()
+            .chain(fake.calls_to("older"))
             .filter(|c| c.reserve == BACKFILL_RESERVE)
             .count()
     };

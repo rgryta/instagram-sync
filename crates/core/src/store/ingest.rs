@@ -230,7 +230,7 @@ fn message_values(mut row: Separated<'_, Postgres, &'static str>, m: &MessageRec
         .push_bind(Json(&m.raw));
 }
 
-/// Record where the backfill crawl of one thread stands.
+/// Record where the backfill crawl of one thread stands, and that it had its turn.
 ///
 /// Both columns are assigned outright rather than COALESCEd: this is the loop that owns
 /// them, and it has to be able to say "no cursor left" and "start again" as plainly as
@@ -244,7 +244,7 @@ pub async fn set_backfill(
 ) -> Result<(), sqlx::Error> {
     query(
         "
-        UPDATE thread SET backfill_cursor = $3, backfill_done = $4
+        UPDATE thread SET backfill_cursor = $3, backfill_done = $4, backfill_at = now()
          WHERE account_id = $1 AND thread_id = $2
         ",
     )
@@ -421,14 +421,12 @@ pub async fn newest_message(
     row.as_ref().map(message_from_row).transpose()
 }
 
-/// Threads still owing history, shallowest first, then least recently visited.
+/// Threads still owing history, the one whose last backfill turn is oldest first.
 ///
-/// Shallowest first because a pass re-walks a thread from its newest message: a turn on
-/// a thread `depth` pages deep costs `depth` requests before it gains one. Ordering by
-/// the poll's visit alone fixated on quiet threads, which the poll never stamps, so one
-/// deep quiet thread spent the whole day's budget while the busy ones never got a turn.
-/// Depth is read the way `backfill::depth` reads it: anything not a page count is 0.
-/// A never-polled thread sorts first among equals, which is why NULLS FIRST is spelled out.
+/// Round-robin on the backfill's own stamp: ordering by the poll's visit fixated on
+/// quiet threads, which the poll never stamps, so one of them took every turn while the
+/// busy ones never got one. A thread never backfilled sorts first, then the least
+/// recently polled; NULLS FIRST is spelled out because that is the oldest there is.
 pub async fn threads_needing_backfill(
     pool: &PgPool,
     account_id: &str,
@@ -439,9 +437,7 @@ pub async fn threads_needing_backfill(
         thread_columns!(),
         " FROM thread
          WHERE account_id = $1 AND NOT backfill_done
-         ORDER BY CASE WHEN btrim(backfill_cursor) ~ '^[0-9]{1,18}$'
-                       THEN btrim(backfill_cursor)::bigint ELSE 0 END,
-                  last_polled_at ASC NULLS FIRST, thread_id
+         ORDER BY backfill_at ASC NULLS FIRST, last_polled_at ASC NULLS FIRST, thread_id
          LIMIT $2"
     ))
     .bind(account_id)
@@ -460,6 +456,26 @@ pub async fn get_thread(
         thread_columns!(),
         " FROM thread WHERE account_id = $1 AND thread_id = $2"
     ))
+    .bind(account_id)
+    .bind(thread_id)
+    .fetch_optional(pool)
+    .await
+}
+
+/// The id of the oldest message stored for a thread: where backfill resumes.
+pub async fn oldest_item_id(
+    pool: &PgPool,
+    account_id: &str,
+    thread_id: &str,
+) -> Result<Option<String>, sqlx::Error> {
+    query_scalar(
+        "
+        SELECT item_id FROM message
+         WHERE account_id = $1 AND thread_id = $2
+         ORDER BY ts ASC, item_id ASC
+         LIMIT 1
+        ",
+    )
     .bind(account_id)
     .bind(thread_id)
     .fetch_optional(pool)
