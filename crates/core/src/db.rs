@@ -45,6 +45,10 @@ pub const MIGRATIONS: &[(&str, &str)] = &[
         "0006_backfill_budget.sql",
         include_str!("../../../db-migrations/pg/0006_backfill_budget.sql"),
     ),
+    (
+        "0007_fuzzy_search.sql",
+        include_str!("../../../db-migrations/pg/0007_fuzzy_search.sql"),
+    ),
 ];
 
 const SCHEMA_MIGRATION_DDL: &str = "

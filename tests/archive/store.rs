@@ -267,6 +267,45 @@ db_test!(stored_messages_are_findable_by_full_text_search, |f| {
     assert!(nothing.hits.is_empty());
 });
 
+db_test!(search_forgives_accents_typos_and_endings, |f| {
+    crate::support::account(&f.pool, "me", "1", None).await;
+    thread(&f.pool, Conv::default()).await;
+    for (item_id, text) in [
+        ("s1", "naprawa samochodu jutro"),
+        ("s2", "samochód stoi"),
+        ("z1", "Widziałem żółwia w zoo"),
+        ("p1", "zjemy pierogi dziś?"),
+    ] {
+        message(
+            &f.pool,
+            Msg {
+                item_id,
+                text,
+                ..Msg::default()
+            },
+        )
+        .await;
+    }
+    async fn found(pool: &sqlx::PgPool, query: &str) -> Vec<String> {
+        store::search_messages(pool, query, None, None, None, None, None, None, 25)
+            .await
+            .unwrap()
+            .hits
+            .into_iter()
+            .map(|hit| hit.message.item_id)
+            .collect()
+    }
+    // Accents fold both ways, and an exact word outranks a near one.
+    assert_eq!(found(&f.pool, "samochod").await, ["s2", "s1"]);
+    assert_eq!(found(&f.pool, "zolw").await, ["z1"]);
+    // A typo, and words far apart in either order.
+    assert_eq!(found(&f.pool, "pierogki").await, ["p1"]);
+    assert_eq!(found(&f.pool, "jutro samochod").await, ["s1"]);
+    // Same letters, different word: no match. A quoted phrase stays exact.
+    assert!(found(&f.pool, "kot").await.is_empty());
+    assert!(found(&f.pool, "\"pierogki\"").await.is_empty());
+});
+
 db_test!(
     resolve_people_is_whole_string_where_find_people_is_not,
     |f| {
