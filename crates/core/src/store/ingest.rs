@@ -421,12 +421,14 @@ pub async fn newest_message(
     row.as_ref().map(message_from_row).transpose()
 }
 
-/// Threads still owing history, least recently visited first.
+/// Threads still owing history, shallowest first, then least recently visited.
 ///
-/// The ordering is what makes the crawl spread instead of fixating: a thread the loop
-/// just worked on sorts to the back, so a thread whose backfill keeps failing cannot
-/// starve every other one. A never-polled thread sorts first — it is the oldest there
-/// is, not the newest, which is why NULLS FIRST is spelled out.
+/// Shallowest first because a pass re-walks a thread from its newest message: a turn on
+/// a thread `depth` pages deep costs `depth` requests before it gains one. Ordering by
+/// the poll's visit alone fixated on quiet threads, which the poll never stamps, so one
+/// deep quiet thread spent the whole day's budget while the busy ones never got a turn.
+/// Depth is read the way `backfill::depth` reads it: anything not a page count is 0.
+/// A never-polled thread sorts first among equals, which is why NULLS FIRST is spelled out.
 pub async fn threads_needing_backfill(
     pool: &PgPool,
     account_id: &str,
@@ -437,7 +439,9 @@ pub async fn threads_needing_backfill(
         thread_columns!(),
         " FROM thread
          WHERE account_id = $1 AND NOT backfill_done
-         ORDER BY last_polled_at ASC NULLS FIRST, thread_id
+         ORDER BY CASE WHEN btrim(backfill_cursor) ~ '^[0-9]{1,18}$'
+                       THEN btrim(backfill_cursor)::bigint ELSE 0 END,
+                  last_polled_at ASC NULLS FIRST, thread_id
          LIMIT $2"
     ))
     .bind(account_id)
