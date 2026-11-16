@@ -1,0 +1,1452 @@
+{
+  "data": {
+    "get_slide_thread_nullable": {
+      "as_ig_direct_thread": {
+        "id": "4194329962826250",
+        "thread_subtype": "victor romeo romeo",
+        "viewer_id": "290531230",
+        "event_chat_info": null,
+        "ig_direct_event": null,
+        "admin_user_ids": [],
+        "thread_title": "oscar november j",
+        "nicknames": [],
+        "users": [
+          {
+            "interop_messaging_user_fbid": "443496569243864",
+            "username": "juliet ",
+            "full_name": "hotel india xray",
+            "id": "7549281326",
+            "profile_pic_url": "https://example.com/77adb20af0a3",
+            "latest_reel_media": 0,
+            "latest_besties_reel_media": 0,
+            "reel_media_seen_timestamp": null,
+            "is_verified": false,
+            "aigm_account_label_info": {
+              "attribution_label_text": null,
+              "is_auto_detected": false,
+              "is_enabled": false,
+              "is_manually_enabled": false
+            },
+            "ai_agent_type": null,
+            "friendship_status": {
+              "blocking": false,
+              "is_restricted": false,
+              "following": true
+            },
+            "pk": "7549281326",
+            "fbid_v2": "romeo charlie lim",
+            "__typename": "XDTUserDict",
+            "is_cannes": false,
+            "is_predicted_cannes": false
+          }
+        ],
+        "thread_image_url": null,
+        "thread_key": "victor kilo fox",
+        "thread_fbid": "4194329962826250",
+        "slide_messages": {
+          "edges": [
+            {
+              "node": {
+                "id": "a6ed239da27666c4ad520198c6a944eafa",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessagePortraitXMA",
+                    "preview_image": {
+                      "url": "https://example.com/522a5a550606",
+                      "fallback_url": "https://example.com/bda403f7fbf4",
+                      "width": 720,
+                      "height": 1280,
+                      "preview_image_decoration_type": "sier"
+                    },
+                    "header_icon": {
+                      "url": "https://example.com/c9bdd13112e4"
+                    },
+                    "header_subtitle_text": null,
+                    "header_title_text": "quebec un",
+                    "verified_type": "romeo novemb",
+                    "target_id": "3938267534003203010",
+                    "target_url": "https://example.com/aae33f867006",
+                    "favicon": null,
+                    "is_quoted": null,
+                    "xmaHeaderTitle": "oscar que",
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": "sier",
+                      "url": "https://example.com/522a5a550606",
+                      "fallback_url": "https://example.com/bda403f7fbf4"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "a6ed239da27666c4ad520198c6a944eafa",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "3339232501311416068",
+                "timestamp_ms": "1796482751017",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "53780b516e032a327d6456b0863d73c0760f67b120605e29bc7f8105004ff86853780b516e032a327d6456b0863d73c0760f67b120605e29bc7f8105004ff8685378"
+            },
+            {
+              "node": {
+                "id": "164d57da5d69b58d589f828fe346e85445",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessagePortraitXMA",
+                    "preview_image": {
+                      "url": "https://example.com/c9700a1d80e9",
+                      "fallback_url": "https://example.com/5141a96fbc4d",
+                      "width": 640,
+                      "height": 1136,
+                      "preview_image_decoration_type": "sier"
+                    },
+                    "header_icon": {
+                      "url": "https://example.com/a97e9575f632"
+                    },
+                    "header_subtitle_text": null,
+                    "header_title_text": "lima xray",
+                    "verified_type": "foxtrot",
+                    "target_id": "6151231050219594107",
+                    "target_url": "https://example.com/1ab6f9505272",
+                    "favicon": null,
+                    "is_quoted": null,
+                    "xmaHeaderTitle": "charlie w",
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": "sier",
+                      "url": "https://example.com/c9700a1d80e9",
+                      "fallback_url": "https://example.com/5141a96fbc4d"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "164d57da5d69b58d589f828fe346e85445",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "1532391142665457644",
+                "timestamp_ms": "1796480594342",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "641244806bf417822f0dc090642e446c22e9f6b8a72d0af6082fb1f937242c3f641244806bf417822f0dc090642e446c22e9f6b8a72d0af6082fb1f937242c3f6412"
+            },
+            {
+              "node": {
+                "id": "db8a5863daf87c6566ec19540650c10b86",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessagePortraitXMA",
+                    "preview_image": {
+                      "url": "https://example.com/eead358a6594",
+                      "fallback_url": "https://example.com/af7a5b862354",
+                      "width": 1080,
+                      "height": 1920,
+                      "preview_image_decoration_type": "sier"
+                    },
+                    "header_icon": {
+                      "url": "https://example.com/8a9919c21a92"
+                    },
+                    "header_subtitle_text": null,
+                    "header_title_text": "charlie papa unif",
+                    "verified_type": "romeo novemb",
+                    "target_id": "4534013493574301492",
+                    "target_url": "https://example.com/ac6361abeb33",
+                    "favicon": null,
+                    "is_quoted": null,
+                    "xmaHeaderTitle": "yankee sierra gol",
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": "sier",
+                      "url": "https://example.com/eead358a6594",
+                      "fallback_url": "https://example.com/af7a5b862354"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "db8a5863daf87c6566ec19540650c10b86",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "1527114253813216055",
+                "timestamp_ms": "1796463844205",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "91f48d5189d8baf31940a45622f7f9f1a677436e4497a53137d302eb85a0d52b91f48d5189d8baf31940a45622f7f9f1a677436e4497a53137d302eb85a0d52b91f4"
+            },
+            {
+              "node": {
+                "id": "b1c5c620d06c441dd230989cc29d22fd04",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessageStandardXMA",
+                    "caption_body_text": null,
+                    "title_text": "charlie sierra november yankee ",
+                    "header_title_text": "uniform rom",
+                    "preview_image": {
+                      "url": "https://example.com/cdde8d8f4542",
+                      "fallback_url": "https://example.com/300b23bbcd48",
+                      "width": 1080,
+                      "height": 1440,
+                      "preview_image_decoration_type": null
+                    },
+                    "target_id": "1018959436630443438",
+                    "target_url": "https://example.com/689daf4702fc",
+                    "header_icon": {
+                      "url": "https://example.com/4e9891a82c12"
+                    },
+                    "header_subtitle_text": null,
+                    "verified_type": "romeo novemb",
+                    "subtitle_text": null,
+                    "subtitle_decoration_type": null,
+                    "cta_buttons": [],
+                    "preview_layout_type": "victor",
+                    "preview_extra_urls_info": [],
+                    "overlay_title": null,
+                    "overlay_description": null,
+                    "overlay_icon_glyph": null,
+                    "favicon": null,
+                    "parent_post": null,
+                    "xmaHeaderTitle": "charlie hot",
+                    "xmaTitle": "zulu zulu delta lima quebec cha",
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": null,
+                      "url": "https://example.com/cdde8d8f4542",
+                      "fallback_url": "https://example.com/300b23bbcd48"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "b1c5c620d06c441dd230989cc29d22fd04",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "5375360811705193432",
+                "timestamp_ms": "1796398331240",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "3c1c3004ca630bc2c5357fdeb5da0e017b30a8f79587578ed1a253aa29d951d83c1c3004ca630bc2c5357fdeb5da0e017b30a8f79587578ed1a253aa29d951d83c1c"
+            },
+            {
+              "node": {
+                "id": "4479da9167285da284f42721fb6d527722",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessageStandardXMA",
+                    "caption_body_text": null,
+                    "title_text": "romeo romeo golf papa romeo romeo yankee sierra romeo golf mike bravo lima bravo lima bravo lima bravo lima bravo lima bravo",
+                    "header_title_text": "uniform oscar f",
+                    "preview_image": {
+                      "url": "https://example.com/f95c0002b35e",
+                      "fallback_url": "https://example.com/8aba8b406f8f",
+                      "width": 992,
+                      "height": 992,
+                      "preview_image_decoration_type": null
+                    },
+                    "target_id": "5165651002551714610",
+                    "target_url": "https://example.com/9635b01f02fb",
+                    "header_icon": {
+                      "url": "https://example.com/c52236c70246"
+                    },
+                    "header_subtitle_text": null,
+                    "verified_type": "romeo novemb",
+                    "subtitle_text": null,
+                    "subtitle_decoration_type": null,
+                    "cta_buttons": [],
+                    "preview_layout_type": "victor",
+                    "preview_extra_urls_info": [],
+                    "overlay_title": null,
+                    "overlay_description": null,
+                    "overlay_icon_glyph": null,
+                    "favicon": null,
+                    "parent_post": null,
+                    "xmaHeaderTitle": "india echo lima",
+                    "xmaTitle": "golf papa yankee delta lima bravo papa yankee oscar november juliet bravo lima bravo lima bravo lima bravo lima bravo lima",
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": null,
+                      "url": "https://example.com/f95c0002b35e",
+                      "fallback_url": "https://example.com/8aba8b406f8f"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "4479da9167285da284f42721fb6d527722",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "2433831304744482351",
+                "timestamp_ms": "1796278448870",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "ca30006da0a92d87d7f80465e7e0dfd30a45a47bfe9482d2828ecf14d5f4dadcca30006da0a92d87d7f80465e7e0dfd30a45a47bfe9482d2828ecf14d5f4dadcca30"
+            },
+            {
+              "node": {
+                "id": "693ad5a277efb2d8fd9693ec13a602bc77",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "",
+                  "xma": {
+                    "__typename": "SlideMessageStandardXMA",
+                    "caption_body_text": null,
+                    "title_text": null,
+                    "header_title_text": "india mike",
+                    "preview_image": {
+                      "url": "https://example.com/b368887482b7",
+                      "fallback_url": "https://example.com/5878204e3bd4",
+                      "width": 1080,
+                      "height": 1080,
+                      "preview_image_decoration_type": null
+                    },
+                    "target_id": "9054525344557104589",
+                    "target_url": "https://example.com/4a8df915c8b0",
+                    "header_icon": {
+                      "url": "https://example.com/d8cdf921eef4"
+                    },
+                    "header_subtitle_text": null,
+                    "verified_type": "foxtrot",
+                    "subtitle_text": null,
+                    "subtitle_decoration_type": null,
+                    "cta_buttons": [],
+                    "preview_layout_type": "victor",
+                    "preview_extra_urls_info": [],
+                    "overlay_title": null,
+                    "overlay_description": null,
+                    "overlay_icon_glyph": null,
+                    "favicon": null,
+                    "parent_post": null,
+                    "xmaHeaderTitle": "sierra nov",
+                    "xmaTitle": null,
+                    "xmaPreviewImage": {
+                      "preview_image_decoration_type": null,
+                      "url": "https://example.com/b368887482b7",
+                      "fallback_url": "https://example.com/5878204e3bd4"
+                    },
+                    "eyebrow_text": null,
+                    "collapsible_id": null
+                  }
+                },
+                "message_id": "693ad5a277efb2d8fd9693ec13a602bc77",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MESSAGE_INLINE_SHARE",
+                "offline_threading_id": "5886221349234590747",
+                "timestamp_ms": "1796119060117",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "90991832ab78b6e372dedcddac21b6385cb7a7ac19c67144d3cdb6a0bc586e3890991832ab78b6e372dedcddac21b6385cb7a7ac19c67144d3cdb6a0bc586e389099"
+            },
+            {
+              "node": {
+                "id": "9bd2d40644ab347a56cbdf5d9a59665747",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "bravo hotel "
+                },
+                "message_id": "9bd2d40644ab347a56cbdf5d9a59665747",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "1645417702994211320",
+                "timestamp_ms": "1795872078923",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "bravo hotel ",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": "10ec1b69557ce9ecd4eedccef6cfc0e304",
+                "msg_reactions": [],
+                "replied_to_message": {
+                  "message_id": "10ec1b69557ce9ecd4eedccef6cfc0e304",
+                  "sender": {
+                    "name": "lima xray s",
+                    "id": "221702580660564"
+                  },
+                  "sender_fbid": "221702580660564",
+                  "id": "10ec1b69557ce9ecd4eedccef6cfc0e304",
+                  "is_reported": false,
+                  "is_tombstone_revealable": null,
+                  "tombstone_reason": null,
+                  "is_ai_generated": false,
+                  "timestamp_ms": "1795866603046",
+                  "text_body": "",
+                  "content_type": "IMAGES",
+                  "content": {
+                    "__typename": "SlideMessageImageContent",
+                    "__isSlideMessageContent": "SlideMessageImageContent",
+                    "attachments": [
+                      {
+                        "attachment_fbid": "6341083089003349",
+                        "attachment_type": 2,
+                        "__isSlideMessagingMediaAttachment": "XFBSlideAttachment",
+                        "preview_cdn_url": "https://example.com/5ba2d295c060",
+                        "preview_cdn_fallback_url": null,
+                        "preview_height": 960,
+                        "preview_width": 540,
+                        "attachment_cdn_url": "https://example.com/fac7a7089290",
+                        "attachment_cdn_fallback_url": null
+                      }
+                    ]
+                  },
+                  "mentions": [],
+                  "igd_is_forwarded": false
+                },
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "9a370a9eabcc761ff0ec94680d3db3cce15ad8e996a600f2146e87a9124777e79a370a9eabcc761ff0ec94680d3db3cce15ad8e996a600f2146e87a9124777e79a37"
+            },
+            {
+              "node": {
+                "id": "7c8c91b78f0fae381fc5002f0103de2e86",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageAdminText",
+                  "__isSlideMessageContent": "SlideMessageAdminText",
+                  "is_reaction_action_log": true,
+                  "text_fragments": [
+                    {
+                      "plaintext": "india tango zul",
+                      "link_fragment": null
+                    }
+                  ]
+                },
+                "message_id": "7c8c91b78f0fae381fc5002f0103de2e86",
+                "thread_fbid": "4194329962826250",
+                "content_type": "REACTION_LOG_XMAT",
+                "offline_threading_id": "414",
+                "timestamp_ms": "1795872075987",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": null,
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "526955157ac0a80979ff989baf81bb7b15204a3cc63b8aced542317e87691064526955157ac0a80979ff989baf81bb7b15204a3cc63b8aced542317e876910645269"
+            },
+            {
+              "node": {
+                "id": "10ec1b69557ce9ecd4eedccef6cfc0e304",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageImageContent",
+                  "__isSlideMessageContent": "SlideMessageImageContent",
+                  "attachments": [
+                    {
+                      "attachment_fbid": "6341083089003349",
+                      "attachment_type": 2,
+                      "__isSlideMessagingMediaAttachment": "XFBSlideAttachment",
+                      "preview_cdn_url": "https://example.com/5ba2d295c060",
+                      "preview_cdn_fallback_url": null,
+                      "preview_height": 960,
+                      "preview_width": 540,
+                      "attachment_cdn_url": "https://example.com/fac7a7089290",
+                      "attachment_cdn_fallback_url": null,
+                      "__typename": "XFBSlideAttachment"
+                    }
+                  ]
+                },
+                "message_id": "10ec1b69557ce9ecd4eedccef6cfc0e304",
+                "thread_fbid": "4194329962826250",
+                "content_type": "IMAGES",
+                "offline_threading_id": "1903552405312569834",
+                "timestamp_ms": "1795866603046",
+                "reactions": [
+                  {
+                    "log_message_id": "7c8c91b78f0fae381fc5002f0103de2e86",
+                    "reaction": "w",
+                    "reaction_timestamp_ms": "1795872075987",
+                    "sender_fbid": "443496569243864"
+                  }
+                ],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [
+                  {
+                    "sender_fbid": "443496569243864",
+                    "sender_igid": "7549281326"
+                  }
+                ],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "e6d64454c6d1aeb1690bc4b1b651ba2e38ad75b9eb40c91a36747754b93348bde6d64454c6d1aeb1690bc4b1b651ba2e38ad75b9eb40c91a36747754b93348bde6d6"
+            },
+            {
+              "node": {
+                "id": "9724f1441cf3d3c6268830713b850c51d8",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "tango zulu"
+                },
+                "message_id": "9724f1441cf3d3c6268830713b850c51d8",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "3723800845210100433",
+                "timestamp_ms": "1795866600850",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "tango zulu",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "9c494822613aafe67f825e3b8b687858c21dcb15dfd13025ba718f7a13ca5a239c494822613aafe67f825e3b8b687858c21dcb15dfd13025ba718f7a13ca5a239c49"
+            },
+            {
+              "node": {
+                "id": "734856163743fae73191d5789e175df883",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "kilo foxtrot lima quebec romeo november"
+                },
+                "message_id": "734856163743fae73191d5789e175df883",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "7480424215325647454",
+                "timestamp_ms": "1795866382135",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "kilo foxtrot lima quebec romeo november",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "81e94e942062998a0c2640dda6918a574169bd688a4d59ec7279f48d71962b7581e94e942062998a0c2640dda6918a574169bd688a4d59ec7279f48d71962b7581e9"
+            },
+            {
+              "node": {
+                "id": "b1b5d129697e4fcc2ae48a335df9419e38",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "november fo"
+                },
+                "message_id": "b1b5d129697e4fcc2ae48a335df9419e38",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "1345531003193331023",
+                "timestamp_ms": "1795866276115",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "november fo",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "164c82d77bef391e87a3f1d6bf47cb6271df8a7d11465269d51ae5262c57be19164c82d77bef391e87a3f1d6bf47cb6271df8a7d11465269d51ae5262c57be19164c"
+            },
+            {
+              "node": {
+                "id": "6ac3efc676cf212bbc2a3d1831046ac1c5",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "xray "
+                },
+                "message_id": "6ac3efc676cf212bbc2a3d1831046ac1c5",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "5061130445298382517",
+                "timestamp_ms": "1795866259931",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "xray ",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "e0dafc60988549288a6ec77a7d39730c4ec3e5fec23fee525df23d3a21240ba9e0dafc60988549288a6ec77a7d39730c4ec3e5fec23fee525df23d3a21240ba9e0da"
+            },
+            {
+              "node": {
+                "id": "daa5f49d16f5baf7a3790a33837fb8055c",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "ya"
+                },
+                "message_id": "daa5f49d16f5baf7a3790a33837fb8055c",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "6894351546520586130",
+                "timestamp_ms": "1795866256531",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "ya",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "11b69a9f31625bf5c23a8fe88761c069a3f67e2e80faad1419f40cb091ce407911b69a9f31625bf5c23a8fe88761c069a3f67e2e80faad1419f40cb091ce407911b6"
+            },
+            {
+              "node": {
+                "id": "7d093775ed0c145bc47bc9117c13c6fc99",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "india tango romeo go"
+                },
+                "message_id": "7d093775ed0c145bc47bc9117c13c6fc99",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "5172405190631854002",
+                "timestamp_ms": "1795866255711",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "india tango romeo go",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "4155b5403e1b9dda117325e28f4c8e9c9e95bc22ecc43125b6997704c5b47bd84155b5403e1b9dda117325e28f4c8e9c9e95bc22ecc43125b6997704c5b47bd84155"
+            },
+            {
+              "node": {
+                "id": "2287c56c674f826b45d0b5ab970460e3f9",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "pa"
+                },
+                "message_id": "2287c56c674f826b45d0b5ab970460e3f9",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "4874414004652182689",
+                "timestamp_ms": "1795866254639",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "pa",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "3fdef0c02d6c5ec28a88315a1be9dcafa6688fbc92f72ee5e41c5419efb299cb3fdef0c02d6c5ec28a88315a1be9dcafa6688fbc92f72ee5e41c5419efb299cb3fde"
+            },
+            {
+              "node": {
+                "id": "f72f5ca74f126f886898a64c32fe8d189e",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "charlie papa romeo rom"
+                },
+                "message_id": "f72f5ca74f126f886898a64c32fe8d189e",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "3772032205224550320",
+                "timestamp_ms": "1795866247151",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "charlie papa romeo rom",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "5cefb056b4deafb7c6ccb656c50bc8ad5ca37d76a2ad1d7e1ed54eab6ac746725cefb056b4deafb7c6ccb656c50bc8ad5ca37d76a2ad1d7e1ed54eab6ac746725cef"
+            },
+            {
+              "node": {
+                "id": "f32f716d460dba7603520d74d7293d65cc",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageXMAContent",
+                  "__isSlideMessageContent": "SlideMessageXMAContent",
+                  "xma_text_body": "echo papa yankee oscar november foxtrot al",
+                  "xma": {
+                    "__typename": "SlideMessageExpiredPlaceholderXMA",
+                    "caption_body_text": "kilo xray kilo un",
+                    "eyebrow_text": "xray sierra victor oscar yankee"
+                  }
+                },
+                "message_id": "f32f716d460dba7603520d74d7293d65cc",
+                "thread_fbid": "4194329962826250",
+                "content_type": "MONTAGE_SHARE_XMA",
+                "offline_threading_id": "7291530817253937032",
+                "timestamp_ms": "1795866238868",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "zulu delta echo india echo papa juliet xra",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "74d74591182e94ee6af314895c6f15ccd056e65217cd8f6131a81ae03668d49c74d74591182e94ee6af314895c6f15ccd056e65217cd8f6131a81ae03668d49c74d7"
+            },
+            {
+              "node": {
+                "id": "7c70280becce786bf92ae2e031658c2ad7",
+                "is_reported": false,
+                "sender_fbid": "443496569243864",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageAdminText",
+                  "__isSlideMessageContent": "SlideMessageAdminText",
+                  "is_reaction_action_log": true,
+                  "text_fragments": [
+                    {
+                      "plaintext": "victor golf tango kilo ind",
+                      "link_fragment": null
+                    }
+                  ]
+                },
+                "message_id": "7c70280becce786bf92ae2e031658c2ad7",
+                "thread_fbid": "4194329962826250",
+                "content_type": "REACTION_LOG_XMAT",
+                "offline_threading_id": "976",
+                "timestamp_ms": "1795864144663",
+                "reactions": [],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": null,
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "india tango zulu",
+                  "id": "443496569243864",
+                  "igid": "7549281326",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "username": "juliet ",
+                    "full_name": "hotel india xray",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "id": "7549281326",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "b660a2a826556aeea82ce70a1eb0421407a291d0d4dae00ba593586b364e35e0b660a2a826556aeea82ce70a1eb0421407a291d0d4dae00ba593586b364e35e0b660"
+            },
+            {
+              "node": {
+                "id": "527bbb6af040d00fc0546bda7abdcae43a",
+                "is_reported": false,
+                "sender_fbid": "221702580660564",
+                "tombstone_reason": null,
+                "is_tombstone_revealable": null,
+                "content": {
+                  "__typename": "SlideMessageText",
+                  "__isSlideMessageContent": "SlideMessageText",
+                  "text_body": "sierra november foxtrot papa november november uniform zulu oscar november juliet bravo lima bravo lima brav"
+                },
+                "message_id": "527bbb6af040d00fc0546bda7abdcae43a",
+                "thread_fbid": "4194329962826250",
+                "content_type": "TEXT",
+                "offline_threading_id": "4522203316502521477",
+                "timestamp_ms": "1795860377526",
+                "reactions": [
+                  {
+                    "log_message_id": "7c70280becce786bf92ae2e031658c2ad7",
+                    "reaction": "o",
+                    "reaction_timestamp_ms": "1795864144663",
+                    "sender_fbid": "443496569243864"
+                  }
+                ],
+                "bot_response_id": null,
+                "is_ai_generated": false,
+                "text_body": "sierra november foxtrot papa november november uniform zulu oscar november juliet bravo lima bravo lima brav",
+                "mentions": [],
+                "igd_is_forwarded": false,
+                "replied_to_message_id": null,
+                "msg_reactions": [
+                  {
+                    "sender_fbid": "443496569243864",
+                    "sender_igid": "7549281326"
+                  }
+                ],
+                "replied_to_message": null,
+                "sender": {
+                  "name": "lima xray s",
+                  "id": "221702580660564",
+                  "igid": "290531230",
+                  "user_dict": {
+                    "profile_pic_url": "https://example.com/e762d9693334",
+                    "username": "uniform",
+                    "full_name": "november fo",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "interop_messaging_user_fbid": "221702580660564",
+                    "id": "290531230",
+                    "ai_agent_type": null
+                  }
+                },
+                "slide_edit_history": [],
+                "is_pinned": false,
+                "igd_wearables_attribution_text": null,
+                "igd_wearables_attribution_type": null,
+                "expiration_timestamp_ms": null,
+                "view_expiration_timestamp_ms": null,
+                "__typename": "SlideMessage"
+              },
+              "cursor": "a4e71b1f1c659f3984766f4b7efd351d6064d7387349751981a57f0168006700a4e71b1f1c659f3984766f4b7efd351d6064d7387349751981a57f0168006700a4e7"
+            }
+          ],
+          "page_info": {
+            "end_cursor": "cb429163a3fe325d94465315e1c2713d648ed1bc8c93ae7647ccf089c5c5de1ecb429163a3fe325d94465315e1c2713d648ed1bc8c93ae7647ccf089c5c5de1ecb42",
+            "has_next_page": true,
+            "has_previous_page": false,
+            "start_cursor": "6dbe7d67d1007265957ea601d3f190e73e047ebfeef78783e6616c8483041c306dbe7d67d1007265957ea601d3f190e73e047ebfeef78783e6616c8483041c306dbe"
+          }
+        },
+        "viewer": {
+          "id": "290531230",
+          "interop_messaging_user_fbid": "221702580660564",
+          "profile_pic_url": "https://example.com/4271d16161ee",
+          "username": "uniform",
+          "full_name": "november fo",
+          "friendship_status": null,
+          "ai_agent_type": null
+        },
+        "is_group": false,
+        "group_creator": null,
+        "ig_thread_capabilities": {
+          "capabilities_0": "lima juliet xray de",
+          "capabilities_1": "yankee s"
+        },
+        "reachability_status": "quebec ro",
+        "thread_id": "675900901845101134115206714531507528907",
+        "safety_mitigations": null,
+        "last_activity_timestamp_ms": "1796482751017",
+        "slide_read_receipts": [
+          {
+            "participant_fbid": "443496569243864",
+            "watermark_timestamp_ms": "1795866603047"
+          },
+          {
+            "participant_fbid": "221702580660564",
+            "watermark_timestamp_ms": "1796482751018"
+          }
+        ],
+        "marked_as_unread": false,
+        "pinned_messages_metadata": [],
+        "pinned_messages": [],
+        "system_folder": "quebe",
+        "input_mode": 0,
+        "creator_broadcast_thread_data": null,
+        "hidden_chat_info": null
+      },
+      "id": "4194329962826250"
+    }
+  },
+  "extensions": {
+    "server_metadata": {
+      "request_start_time_ms": 1796655975736,
+      "time_at_flush_ms": 1796655975839
+    },
+    "is_final": true
+  }
+}

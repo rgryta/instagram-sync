@@ -1,0 +1,2654 @@
+{
+  "data": {
+    "get_slide_mailbox_for_iris_subscription": {
+      "__typename": "SlideMailbox",
+      "iris_inactive_subscription_uq_seq_id": "90442",
+      "threads_by_folder": {
+        "edges": [
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "8220217463401643",
+                "last_activity_timestamp_ms": "1796626164339",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "3212840457",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "205025892547403",
+                    "full_name": "echo tango",
+                    "username": "foxtrot ",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/f36143dc4d1d",
+                    "latest_reel_media": 1793613758,
+                    "latest_besties_reel_media": 1793613758,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "yankee kilo uni",
+                "thread_fbid": "8220217463401643",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "205025892547403",
+                    "watermark_timestamp_ms": "1796486625166"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796486625165"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "653892422379805103531363344233197783327",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "205025892547403",
+                        "timestamp_ms": "1796626164339",
+                        "id": "b67d0693011c8771e4a693ee44789462ce",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "tango golf papa juliet foxtrot alpha delta ech",
+                        "igd_snippet": "papa uniform kilo bravo whiskey victor victor ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "tango golf papa juliet foxtrot alpha delta ech"
+                        }
+                      },
+                      "cursor": "d474c386757ebbcc04e611a44ceced53a57bad0aee3ad3133aac6a04b0527710d474c386757ebbcc04e611a44ceced53a57bad0aee3ad3133aac6a04b0527710d474"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "205025892547403",
+                        "timestamp_ms": "1796626147131",
+                        "id": "c8c12794581f39210d9eb35ab5ca4e39eb",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "november yankee zulu zulu zulu whiskey sierra novemb",
+                        "igd_snippet": "zulu lima quebec charlie lima quebec romeo romeo yan",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "november yankee zulu zulu zulu whiskey sierra novemb"
+                        }
+                      },
+                      "cursor": "c698f4e4a31422699e9200137cc98d326cffa0589d6b5556539478b257be5712c698f4e4a31422699e9200137cc98d326cffa0589d6b5556539478b257be5712c698"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "205025892547403",
+                        "timestamp_ms": "1796626037171",
+                        "id": "7f7a98fa4beb1d3df6bffe3ce9fb10ebb0",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor zulu zulu whiskey s",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "eeeffbd7845a79c55d345d70bb68e006e77bb82852c598f1be82c157b21d3323eeeffbd7845a79c55d345d70bb68e006e77bb82852c598f1be82c157b21d3323eeef"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796486625165",
+                        "id": "2c3dc19d9d442c90ed486ea64968bde0f0",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "xray zulu whiskey kilo bravo papa uniform victor victor delta echo lima bravo lima bravo lima bravo lima bravo lim",
+                        "igd_snippet": "november uniform romeo yankee delta lima foxtrot alpha delta whiskey oscar charlie lima bravo lima bravo lima bravo lim",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "xray zulu whiskey kilo bravo papa uniform victor victor delta echo lima bravo lima bravo lima bravo lima bravo lim"
+                        }
+                      },
+                      "cursor": "58fc415721cb792bfcaee0098c731336e9af442387782261469d8ba2281be97c58fc415721cb792bfcaee0098c731336e9af442387782261469d8ba2281be97c58fc"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796486592597",
+                        "id": "49ed1ab11ffb8491966b58ad51c42221f5",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "charlie sierra yankee kilo mike uniform kilo uniform charlie sierra kilo bravo lima bravo lima bravo lima bravo lima bravo",
+                        "igd_snippet": "kilo bravo lima xray hotel tango kilo bravo delta lima bravo lima bravo lima bravo lima bravo lima bravo lima bravo lima",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "charlie sierra yankee kilo mike uniform kilo uniform charlie sierra kilo bravo lima bravo lima bravo lima bravo lima bravo"
+                        }
+                      },
+                      "cursor": "a080bbbfe325ab3cd9cf92aeec61513f572f257af2d27964917ae395b8403f14a080bbbfe325ab3cd9cf92aeec61513f572f257af2d27964917ae395b8403f14a080"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "c6e5807ccc070fbeeb804e0756056ba4c65a47c6485f5607327ac35bc175099cc6e5807ccc070fbeeb804e0756056ba4c65a47c6485f5607327ac35bc175099cc6e5",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "alpha osca",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "3212840457"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "8220217463401643",
+              "__typename": "SlideThread"
+            },
+            "cursor": "d159baa862456ddfbcf0848e8ace01a562d7fff98c6a432e81278a436172deadd159baa862456ddfbcf0848e8ace01a562d7fff98c6a432e81278a436172deadd159"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1740542002507885",
+                "last_activity_timestamp_ms": "1796556376806",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "7172222411",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "145122202972125",
+                    "full_name": "echo papa charlie ",
+                    "username": "quebec juli",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/42493272b44f",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "yankee delta pa",
+                "thread_fbid": "1740542002507885",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "145122202972125",
+                    "watermark_timestamp_ms": "1796475434204"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796477645342"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "102457666315143748307545262835830327541",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "145122202972125",
+                        "timestamp_ms": "1796556376806",
+                        "id": "2de2e85b29bb7eef1d022aa0beec4f25ce",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "whiskey golf tango romeo y",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "24424fc936cc90df326e39eccacd79a191fa23da7d42b0e3f6bbbea8b91bd1ec24424fc936cc90df326e39eccacd79a191fa23da7d42b0e3f6bbbea8b91bd1ec2442"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "145122202972125",
+                        "timestamp_ms": "1796477645341",
+                        "id": "6b7d1342473876cbfa2f4909a8f9446b9a",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor zulu zulu whiskey s",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "c2d01608911dc1ffc1ab3780e0ce26d790fa6972ed47d19b7fb8b703ef37ed87c2d01608911dc1ffc1ab3780e0ce26d790fa6972ed47d19b7fb8b703ef37ed87c2d0"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796475434203",
+                        "id": "e875a1a117e83e763b5dbedf72ece5e625",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "1bbd393dc823d99f35943426c1218f3a2b2064c0940a9496ad253d7b33baef061bbd393dc823d99f35943426c1218f3a2b2064c0940a9496ad253d7b33baef061bbd"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "145122202972125",
+                        "timestamp_ms": "1796282876873",
+                        "id": "5124416929a28a513e80fa285ba454cb45",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "whiskey golf tango romeo y",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "0bc78f4fb41e4478b7ea1efb349a59b1f9ad010ca4933778e2ce777748c536cb0bc78f4fb41e4478b7ea1efb349a59b1f9ad010ca4933778e2ce777748c536cb0bc7"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796211668100",
+                        "id": "02f9cc9daadd4346c714bee6534f963f14",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "35e11a89f68e6e5c8ab1f0fdc4cee7da485f24a0ab880d02b79ccd53118cb1ed35e11a89f68e6e5c8ab1f0fdc4cee7da485f24a0ab880d02b79ccd53118cb1ed35e1"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "9bdd97f21427861b3e6a8baf48802a205111a17ef76b2eeb4f0fc195d9c741f79bdd97f21427861b3e6a8baf48802a205111a17ef76b2eeb4f0fc195d9c741f79bdd",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "xray kilo bravo al",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "7172222411"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1740542002507885",
+              "__typename": "SlideThread"
+            },
+            "cursor": "92a2714e55f296afadf3de0e30622810a088342ef6b10e89936dc78388862daa92a2714e55f296afadf3de0e30622810a088342ef6b10e89936dc78388862daa92a2"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1524516560930706",
+                "last_activity_timestamp_ms": "1796540984179",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "16443192904",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "54302848275054021",
+                    "full_name": "echo papa unifor",
+                    "username": "xray kilo mike ",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/062a4efa96e7",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "sierra romeo char",
+                "thread_fbid": "1524516560930706",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "54302848275054021",
+                    "watermark_timestamp_ms": "1796539478911"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796539478910"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "950041335936513156940032100345040310714",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "54302848275054021",
+                        "timestamp_ms": "1796540984179",
+                        "id": "8f1e053400f06ea52d3a7b3417bd38a313",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "sierra romeo yankee oscar ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "2a0254f58ce60e0e3300b10505a5675e6dd0ac5a439693b53d693b659ba53a292a0254f58ce60e0e3300b10505a5675e6dd0ac5a439693b53d693b659ba53a292a02"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "54302848275054021",
+                        "timestamp_ms": "1796540209213",
+                        "id": "da786614dab899ec67407f13d788482f5a",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "sierra romeo yankee oscar ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "f6c6b4547a3a552af4e020c628be37bcb2dc173dab5d662e5b243dfdd665889ff6c6b4547a3a552af4e020c628be37bcb2dc173dab5d662e5b243dfdd665889ff6c6"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "54302848275054021",
+                        "timestamp_ms": "1796540068526",
+                        "id": "96a51a060a313ae8847339e90cac14e7f2",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "sierra romeo yankee oscar ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "962ab46bcfa90e50f2872cb5e8d5717cd6e4d2db8cea64e2abf893c7b3706ded962ab46bcfa90e50f2872cb5e8d5717cd6e4d2db8cea64e2abf893c7b3706ded962a"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "54302848275054021",
+                        "timestamp_ms": "1796540006451",
+                        "id": "f20c5b3acbed060c3dbe274851088bc84f",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "ya",
+                        "igd_snippet": "li",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "ya"
+                        }
+                      },
+                      "cursor": "2740c0686d8fd99737d68990b77330405369954cceaf3b1d4b727162aecdabe32740c0686d8fd99737d68990b77330405369954cceaf3b1d4b727162aecdabe32740"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "54302848275054021",
+                        "timestamp_ms": "1796540005270",
+                        "id": "627321825d113c3665393818ae81b80c46",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "charlie alpha ",
+                        "igd_snippet": "echo alpha del",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "charlie alpha "
+                        }
+                      },
+                      "cursor": "510a9cb2de39e2be07ca0a7715b80ceeb23c3187dc4efb109b1dcfad8780a547510a9cb2de39e2be07ca0a7715b80ceeb23c3187dc4efb109b1dcfad8780a547510a"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "609d208a98fa6d19dd6cb8fa4b411c0391be64dde4539f8cce5b08d232fb8c09609d208a98fa6d19dd6cb8fa4b411c0391be64dde4539f8cce5b08d232fb8c09609d",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "delta lima xray ",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "16443192904"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1524516560930706",
+              "__typename": "SlideThread"
+            },
+            "cursor": "1eb961dc468e4bc5233635acc50aaa4ef434d0bf17022a4cf45a1353a81ce4e61eb961dc468e4bc5233635acc50aaa4ef434d0bf17022a4cf45a1353a81ce4e61eb9"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "4194329962826250",
+                "last_activity_timestamp_ms": "1796482751017",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "7549281326",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "443496569243864",
+                    "full_name": "hotel india xray",
+                    "username": "juliet ",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/77adb20af0a3",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "victor kilo fox",
+                "thread_fbid": "4194329962826250",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "443496569243864",
+                    "watermark_timestamp_ms": "1795866603047"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796482751018"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "675900901845101134115206714531507528907",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "443496569243864",
+                        "timestamp_ms": "1796482751017",
+                        "id": "a6ed239da27666c4ad520198c6a944eafa",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "uniform oscar juliet mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "90dcf340489d7696379915958a67f1d64f2e9ba1586c169ab6eb9d954452225f90dcf340489d7696379915958a67f1d64f2e9ba1586c169ab6eb9d954452225f90dc"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "443496569243864",
+                        "timestamp_ms": "1796480594342",
+                        "id": "164d57da5d69b58d589f828fe346e85445",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "uniform oscar juliet mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "bd72b9a53de158bc1c72288cea95fb35006371a625feca8f63396a924ca8e475bd72b9a53de158bc1c72288cea95fb35006371a625feca8f63396a924ca8e475bd72"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "443496569243864",
+                        "timestamp_ms": "1796463844205",
+                        "id": "db8a5863daf87c6566ec19540650c10b86",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "uniform oscar juliet mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "0f4876d4e7e5999f3c6eaf7becfcfd0751e8097133e3ddeaae94ff9954522d2a0f4876d4e7e5999f3c6eaf7becfcfd0751e8097133e3ddeaae94ff9954522d2a0f48"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "443496569243864",
+                        "timestamp_ms": "1796398331240",
+                        "id": "b1c5c620d06c441dd230989cc29d22fd04",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "uniform oscar juliet mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "88b3e9760588a02fc79556a9f7b10d88236d6b748aad77c113b955f414e928bd88b3e9760588a02fc79556a9f7b10d88236d6b748aad77c113b955f414e928bd88b3"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "443496569243864",
+                        "timestamp_ms": "1796278448870",
+                        "id": "4479da9167285da284f42721fb6d527722",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "uniform oscar juliet mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "c4c0389c1127f9174b72d366a38d3fd83998b6947f2fef65a4e1ab7a7b0b3238c4c0389c1127f9174b72d366a38d3fd83998b6947f2fef65a4e1ab7a7b0b3238c4c0"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "5ccc108d9e2215ecc23b6e4d62627d05a25b058e7791a5b6828777c8e78ff1b65ccc108d9e2215ecc23b6e4d62627d05a25b058e7791a5b6828777c8e78ff1b65ccc",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "oscar november j",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "7549281326"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "4194329962826250",
+              "__typename": "SlideThread"
+            },
+            "cursor": "ce7398659179082d3f27080229200e187a5fef111c2a609fbf8006aad0e13ad3ce7398659179082d3f27080229200e187a5fef111c2a609fbf8006aad0e13ad3ce73"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "3105091512868300",
+                "last_activity_timestamp_ms": "1796475434213",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "1200218943",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "152383070011415",
+                    "full_name": "sierra golf xray o",
+                    "username": "november novembe",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/f437224c2203",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "tango november ",
+                "thread_fbid": "3105091512868300",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "152383070011415",
+                    "watermark_timestamp_ms": "1795829869043"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796475434213"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "472250666229387361548089435344316273433",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796475434213",
+                        "id": "adac2bec0d0545e9f8dc9ba7ee902bd40c",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "7d8cc051023477f305d87d9a8229cc3bbd3907ed3ecdedc7c11dec7ddc74ccf97d8cc051023477f305d87d9a8229cc3bbd3907ed3ecdedc7c11dec7ddc74ccf97d8c"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "152383070011415",
+                        "timestamp_ms": "1796465355858",
+                        "id": "13d3f5dcf39fdb0ad6370f4804f1dd4197",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "golf echo alpha lima quebe",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "13834c5f94fc46ac9cb7c2c2bd1610fe994d8ee21d7f96f071f909c7df4cfd6813834c5f94fc46ac9cb7c2c2bd1610fe994d8ee21d7f96f071f909c7df4cfd681383"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "152383070011415",
+                        "timestamp_ms": "1796462306707",
+                        "id": "df21d14fa0fb245bae10dad886ccff6fc9",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "golf echo alpha lima quebe",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "1268160ec6eea0145b315c7d0990fcaf08032e1d735d250acb324bcd0ee95ce01268160ec6eea0145b315c7d0990fcaf08032e1d735d250acb324bcd0ee95ce01268"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "152383070011415",
+                        "timestamp_ms": "1796367686197",
+                        "id": "68a69a4a6af43fdce403b518d6d9cc9a9d",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "golf echo alpha lima quebe",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "12739d9a5738640c3868465fa9a4d5df3ef570044a9c1151d3977d0623c6df4112739d9a5738640c3868465fa9a4d5df3ef570044a9c1151d3977d0623c6df411273"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "152383070011415",
+                        "timestamp_ms": "1796014738528",
+                        "id": "932ec4ab6fd750265ae44eda433499861b",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "golf echo alpha lima quebe",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "079021bcaddfaf713be30aadc86d13974826f7ee6f57cbdeb71ddf13653a3580079021bcaddfaf713be30aadc86d13974826f7ee6f57cbdeb71ddf13653a35800790"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "7ea0c237658c9c7cf46e9c0695cdbe860082f533d721471789727dfd5af8b9b87ea0c237658c9c7cf46e9c0695cdbe860082f533d721471789727dfd5af8b9b87ea0",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "zulu delta whiskey",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "1200218943"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "3105091512868300",
+              "__typename": "SlideThread"
+            },
+            "cursor": "efc46f0f145a820c9139f43a7276c3db588470d1d2d866dca5e08842fc2e5d93efc46f0f145a820c9139f43a7276c3db588470d1d2d866dca5e08842fc2e5d93efc4"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "3133525331544207",
+                "last_activity_timestamp_ms": "1796439980864",
+                "folder": "PRIMARY",
+                "thread_subtype": "uniform r",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "7172222411",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "145122202972125",
+                    "full_name": "echo papa charlie ",
+                    "username": "quebec juli",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/42493272b44f",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  },
+                  {
+                    "ai_agent_type": null,
+                    "id": "6202922619",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "323115842036582",
+                    "full_name": "yankee oscar juliet",
+                    "username": "lima que",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/9ecb628f9753",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "lima bravo lima ",
+                "thread_fbid": "3133525331544207",
+                "is_group": true,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "323115842036582",
+                    "watermark_timestamp_ms": "1794923958847"
+                  },
+                  {
+                    "participant_fbid": "145122202972125",
+                    "watermark_timestamp_ms": "1796439980864"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796439980864"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "150608042823060397748711523612572933513",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796439980864",
+                        "id": "c7d763cbd2f760f14bb42e22e9d4688f8f",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "yankee oscar juliet br",
+                        "igd_snippet": "echo echo echo india quebec",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "yankee oscar juliet br"
+                        }
+                      },
+                      "cursor": "53a53a46a27dc15b746a6d5cf591a7dcd7eb5c1cb040c635b4171067278115ea53a53a46a27dc15b746a6d5cf591a7dcd7eb5c1cb040c635b4171067278115ea53a5"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796439980461",
+                        "id": "8f5f1007570d50a451075845a045206be9",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "2bc2e45bca51b3933c14b618f1bfbfecf6808a2cd9841c84201b19e4043486132bc2e45bca51b3933c14b618f1bfbfecf6808a2cd9841c84201b19e4043486132bc2"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796185317407",
+                        "id": "1cc5c831e66a1f27a699c9cf361f90dd07",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "d0e03f33b90304ac515a5169575db3f3021c74facad06b5a88fe638a1d449dbcd0e03f33b90304ac515a5169575db3f3021c74facad06b5a88fe638a1d449dbcd0e0"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "145122202972125",
+                        "timestamp_ms": "1794923958847",
+                        "id": "9d49b8f3cf85aff086e78cc303ccfbf416",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "bravo sierra romeo november foxtrot papa foxtrot in",
+                        "igd_snippet": "hotel xray oscar uniform oscar yankee zulu zulu delta tango char",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "bravo sierra romeo november foxtrot papa foxtrot in"
+                        }
+                      },
+                      "cursor": "381a7f6d59f806dfc0b0e7d189dcd3c46cb048436a8e1925c09a68ec54c04e5b381a7f6d59f806dfc0b0e7d189dcd3c46cb048436a8e1925c09a68ec54c04e5b381a"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1794923925534",
+                        "id": "40e0ff705d613d2c3db708d64474114cf8",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "zulu zulu delta l",
+                        "igd_snippet": "delta whiskey victor k",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "zulu zulu delta l"
+                        }
+                      },
+                      "cursor": "239933ba55f7b2e4e970b1e831b2221b152c9190b02be2249b4be5acb663ae6d239933ba55f7b2e4e970b1e831b2221b152c9190b02be2249b4be5acb663ae6d2399"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "b213b4a0f5a4812ca75816a2b0b3e3687052eab0bf19ea78520fdcfc6a1693cfb213b4a0f5a4812ca75816a2b0b3e3687052eab0bf19ea78520fdcfc6a1693cfb213",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "bravo sierra romeo yankee zulu lima juliet",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "7172222411"
+                  },
+                  {
+                    "is_internal_user": null,
+                    "id": "6202922619"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "3133525331544207",
+              "__typename": "SlideThread"
+            },
+            "cursor": "a62c22922316066d2e7b3394a7b734790ca3690a54b806d0bafaf26cd9c398f8a62c22922316066d2e7b3394a7b734790ca3690a54b806d"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "5446041526094145",
+                "last_activity_timestamp_ms": "1796402801992",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "242004193",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "920289556553899",
+                    "full_name": "romeo",
+                    "username": "tango go",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/0c30b9dd745d",
+                    "latest_reel_media": null,
+                    "latest_besties_reel_media": null,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "whiskey kilo mi",
+                "thread_fbid": "5446041526094145",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "920289556553899",
+                    "watermark_timestamp_ms": "1794466908987"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796402801993"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "913840023525407535771513043142354264396",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "920289556553899",
+                        "timestamp_ms": "1796402801992",
+                        "id": "54b505612f8041c12b4eba3d7939c4607e",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo romeo victor kilo b",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "bc4836c9bb59e77c58a0c25833b03c2b738b16c6f571257e6d2bf6fbc17cbefbbc4836c9bb59e77c58a0c25833b03c2b738b16c6f571257e6d2bf6fbc17cbefbbc48"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "920289556553899",
+                        "timestamp_ms": "1796144827780",
+                        "id": "5f95af9b98ab985621b1592a7a940e0ebc",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo romeo victor kilo b",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "d9a94fa00ac97cafd7797e8745f94b69ad31cc6c2e773eed02d39411f99cbb80d9a94fa00ac97cafd7797e8745f94b69ad31cc6c2e773eed02d39411f99cbb80d9a9"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "920289556553899",
+                        "timestamp_ms": "1796066972234",
+                        "id": "db8434338042671c32d989dfb60fd69ed1",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo romeo victor kilo b",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "bab7bfa1c4f102734da04d833b7f6f1515b53277a7dbc124a69bc76f8b9329b9bab7bfa1c4f102734da04d833b7f6f1515b53277a7dbc124a69bc76f8b9329b9bab7"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "920289556553899",
+                        "timestamp_ms": "1795245359826",
+                        "id": "d0372695204fe7477e59cfcaa8b8b7c293",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo romeo victor kilo b",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "97a50463dc7d2257256098b5c643ea30cf3f1e6135b3b4c59a60c43450eb8ad797a50463dc7d2257256098b5c643ea30cf3f1e6135b3b4c59a60c43450eb8ad797a5"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "920289556553899",
+                        "timestamp_ms": "1794767498373",
+                        "id": "737954802ace1a903e3d4c5fd520ad663d",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo romeo victor kilo b",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "2c5eccef275f36d948e61aaf469b31d7cda4d6a284b7b3a54e0bfbf92fb6bc0b2c5eccef275f36d948e61aaf469b31d7cda4d6a284b7b3a54e0bfbf92fb6bc0b2c5e"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "fe04b54169c66eb379a5c0f6cb78b7ff91aac92d75beb89e84453ed3de3e5298fe04b54169c66eb379a5c0f6cb78b7ff91aac92d75beb89e84453ed3de3e5298fe04",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "kilo ",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "242004193"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": true,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "5446041526094145",
+              "__typename": "SlideThread"
+            },
+            "cursor": "28be493fad49de3753397e3ada44bffe5df6cdd11bb99f8cdc27892b1bade5e328be493fad49de3753397e3ada44bffe5df6cdd11bb99f8cdc27892b1bade5e328be"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1350239042622575",
+                "last_activity_timestamp_ms": "1796384934465",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "58844912236",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "552335130809320",
+                    "full_name": "xray ki",
+                    "username": "foxtrot ",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/4fff61ba68e1",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "kilo uniform zu",
+                "thread_fbid": "1350239042622575",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "552335130809320",
+                    "watermark_timestamp_ms": "1796384908991"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796384934466"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "810533445113154413263000598145444030584",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "552335130809320",
+                        "timestamp_ms": "1796384934465",
+                        "id": "ac90fd3e5ec122c8338625cc6e94af5a73",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "juliet quebec yankee zulu oscar nove",
+                        "igd_snippet": "tango victor zulu sierra romeo charl",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "juliet quebec yankee zulu oscar nove"
+                        }
+                      },
+                      "cursor": "a8416ae5c5798586298626553c3adfe255a1573033abdefb6cd22ba8ccb181f3a8416ae5c5798586298626553c3adfe255a1573033abdefb6cd22ba8ccb181f3a841"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796384908990",
+                        "id": "24ff4cadc34b21afda3305502c59b4f09e",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "whiskey delta papa romeo romeo yankee zulu whiske",
+                        "igd_snippet": "victor delta echo alpha alpha hotel tango golf tango r",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "whiskey delta papa romeo romeo yankee zulu whiske"
+                        }
+                      },
+                      "cursor": "1201c3206236f7264abffac3534c55f6cd6f6d9ff5924a608c9a7c28505994391201c3206236f7264abffac3534c55f6cd6f6d9ff5924a608c9a7c28505994391201"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "552335130809320",
+                        "timestamp_ms": "1796384847051",
+                        "id": "82314092347d1703d0528ce29c59a037df",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "xray victor zulu sierra vic",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "5794eff07a9a46e1d0a05d6991c0947c2c3db0d42a49ee52f523e0709a7e5ffe5794eff07a9a46e1d0a05d6991c0947c2c3db0d42a49ee52f523e0709a7e5ffe5794"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "25a4de74e7bc5eb3f1a56c87e3c244d1a348a19b12b8b280f40c9816f66b495625a4de74e7bc5eb3f1a56c87e3c244d1a348a19b12b8b280f40c9816f66b495625a4",
+                    "has_next_page": false
+                  }
+                },
+                "thread_title": "novembe",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "58844912236"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1350239042622575",
+              "__typename": "SlideThread"
+            },
+            "cursor": "0380a8e50235962552dfc5293bd7e65bb68ed29e11cf1426032fdf3564e4795f0380a8e50235962552dfc5293bd7e65bb68ed29e11cf1426032fdf3564e4795f0380"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "5394289890788629",
+                "last_activity_timestamp_ms": "1796193395604",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "43140105239",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "102264470433492",
+                    "full_name": "alpha oscar ",
+                    "username": "juliet",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/a701f8111a25",
+                    "latest_reel_media": 1793640387,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "delta tango rom",
+                "thread_fbid": "5394289890788629",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "102264470433492",
+                    "watermark_timestamp_ms": "1796193395605"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796193395604"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "310228239272538140279512835201525564010",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796193395604",
+                        "id": "cc5a44b16cf15995de0eebbbb377ce3afa",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "delt",
+                        "igd_snippet": "bravo pap",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "delt"
+                        }
+                      },
+                      "cursor": "6ff4c5993e3d0e6a00ae6e6fa56e796195078f05941392782468752ac9903d386ff4c5993e3d0e6a00ae6e6fa56e796195078f05941392782468752ac9903d386ff4"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795407095728",
+                        "id": "2fd4dfd9b3e43637608aef5de7b68f4ab2",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "lima qu",
+                        "igd_snippet": "romeo charli",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "lima qu"
+                        }
+                      },
+                      "cursor": "e6fa8bf6f3ab03f20f6cdcb77dca2531a5b6775bbab569320a6a248cfc769879e6fa8bf6f3ab03f20f6cdcb77dca2531a5b6775bbab569320a6a248cfc769879e6fa"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "102264470433492",
+                        "timestamp_ms": "1795405138810",
+                        "id": "cbc9c9a00b430a62dd8e3be0d29bf30837",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "yankee oscar quebec golf alpha sier",
+                        "igd_snippet": "alpha sierra victor golf alpha alph",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "yankee oscar quebec golf alpha sier"
+                        }
+                      },
+                      "cursor": "fc43506b14a0d8148e403cad361740fa1855373f56a1a2ba7c117d7cf2f7fb80fc43506b14a0d8148e403cad361740fa1855373f56a1a2ba7c117d7cf2f7fb80fc43"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "102264470433492",
+                        "timestamp_ms": "1795405119248",
+                        "id": "4ac72b9a47b81ea464b409ef8aa1ea6a07",
+                        "__typename": "SlideMessage",
+                        "content_type": "IMAGES",
+                        "text_body": "",
+                        "igd_snippet": "zulu whiskey victor ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageImageContent"
+                        }
+                      },
+                      "cursor": "aa0f60b7dac94b62b9bca2ca80ee4444dbac02ae76dc9bacb20e9b7b40014aaeaa0f60b7dac94b62b9bca2ca80ee4444dbac02ae76dc9bacb20e9b7b40014aaeaa0f"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "102264470433492",
+                        "timestamp_ms": "1795405109902",
+                        "id": "c1aabde1086545a713f4da53194f733574",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "lima bravo lima uniform victor rom",
+                        "igd_snippet": "kilo foxtrot alpha hotel tango zul",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "lima bravo lima uniform victor rom"
+                        }
+                      },
+                      "cursor": "a2bc49b68124358892de94f8ab8709f5339a1dbaf39eb7d794708de98fdb3964a2bc49b68124358892de94f8ab8709f5339a1dbaf39eb7d794708de98fdb3964a2bc"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "2ee6ba46c97d0e3184f739a4fa0e189ee5805ca6e932d372614e41c96dda15072ee6ba46c97d0e3184f739a4fa0e189ee5805ca6e932d372614e41c96dda15072ee6",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "victor oscar",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "43140105239"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "5394289890788629",
+              "__typename": "SlideThread"
+            },
+            "cursor": "3716dee4b5e43e964d0196fce7e12d9077540a30356e3f4ba27a56a3eb4e919b3716dee4b5e43e964d0196fce7e12d9077540a30356e3f4ba27a56a3eb4e919b3716"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "3677464841594004",
+                "last_activity_timestamp_ms": "1796185417825",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "13241952656",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "34251825070402899",
+                    "full_name": "charl",
+                    "username": "quebec uni",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/0792d6668409",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "lima quebec charl",
+                "thread_fbid": "3677464841594004",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "34251825070402899",
+                    "watermark_timestamp_ms": "1796007027277"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796185417825"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "103535342465693544654833293042144761658",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796185417825",
+                        "id": "48cbfb2b58aa22a8e2f7de9466e853f077",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "bravo alpha ",
+                        "igd_snippet": "charlie sierra ya",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "bravo alpha "
+                        }
+                      },
+                      "cursor": "78482331401f6afd350c50beba36fbb7fcf5c2656f584dd90b041edad5f7feac78482331401f6afd350c50beba36fbb7fcf5c2656f584dd90b041edad5f7feac7848"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796185417474",
+                        "id": "9a7c5bb866222878a5243b839d867a3e6e",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "mike quebec golf tango ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "26c94409ef49dbc1c0310bada77f19fb1a9ab288296e138f225d3cb0d98662f126c94409ef49dbc1c0310bada77f19fb1a9ab288296e138f225d3cb0d98662f126c9"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "34251825070402899",
+                        "timestamp_ms": "1795949342307",
+                        "id": "31cc53dac9ef8a3c6a698f1b98e4c14c42",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "uniform oscar foxtrot l",
+                        "igd_snippet": "november foxtrot xray o",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "uniform oscar foxtrot l"
+                        }
+                      },
+                      "cursor": "7ee76a0563ab3c3416c7bcd866596b8be70aaec151cd49e472d195f6be62cc147ee76a0563ab3c3416c7bcd866596b8be70aaec151cd49e472d195f6be62cc147ee7"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "34251825070402899",
+                        "timestamp_ms": "1795949334785",
+                        "id": "151413e186549e12358df123573e154bbe",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "kilo india quebec char",
+                        "igd_snippet": "mike uniform kilo unif",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "kilo india quebec char"
+                        }
+                      },
+                      "cursor": "510d7e1c3b200395c02a1080bdd71687d997207bd00bf1c5587626be3e13a583510d7e1c3b200395c02a1080bdd71687d997207bd00bf1c5587626be3e13a583510d"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795940172394",
+                        "id": "be49e1cf6b45256f695f339505686fee1a",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "mike juliet mike foxtrot tango n",
+                        "igd_snippet": "foxtrot lima uniform romeo yankee osc",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "mike juliet mike foxtrot tango n"
+                        }
+                      },
+                      "cursor": "5b86a0b95fe44b87785fc86c5113c5a8088d313b95d92716811c0131117acd025b86a0b95fe44b87785fc86c5113c5a8088d313b95d92716811c0131117acd025b86"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "6b9aaf4f852771c972124bc3c0a1226717be9b360d4e28e3bdd5eb2bddccf58e6b9aaf4f852771c972124bc3c0a1226717be9b360d4e28e3bdd5eb2bddccf58e6b9a",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "kilo ",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "13241952656"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "3677464841594004",
+              "__typename": "SlideThread"
+            },
+            "cursor": "847547252761cb837454c47e6c9281cf380bb7c748408d8b0d198dfc20b08960847547252761cb837454c47e6c9281cf380bb7c748408d8b0d198dfc20b089608475"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1042545370265430",
+                "last_activity_timestamp_ms": "1796118575318",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "8453332470",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "502019940557331",
+                    "full_name": "echo alpha ",
+                    "username": "echo tango kil",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/dfbd86c66bd4",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "mike juliet xra",
+                "thread_fbid": "1042545370265430",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "502019940557331",
+                    "watermark_timestamp_ms": "1796118575319"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796118575318"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "232438210773232390767503521850809358244",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796118575318",
+                        "id": "c186c005f1f73411050dd3351ed4812818",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "yankee ",
+                        "igd_snippet": "quebec novem",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "yankee "
+                        }
+                      },
+                      "cursor": "aab592a69fffef76f5a30bc894a7640dc1b00e73a9677c9f3339b28a61ea3d76aab592a69fffef76f5a30bc894a7640dc1b00e73a9677c9f3339b28a61ea3d76aab5"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "502019940557331",
+                        "timestamp_ms": "1796117614561",
+                        "id": "a5b29d08e00da2a684059100469c5b4f79",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "hotel mike bravo delta whiskey oscar foxtr",
+                        "igd_snippet": "romeo juliet foxtrot india mike quebec gol",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "hotel mike bravo delta whiskey oscar foxtr"
+                        }
+                      },
+                      "cursor": "333cf0574f0361abd2383bbe2008a1f085a2475c0f9ebcd719c6f4cf5023c729333cf0574f0361abd2383bbe2008a1f085a2475c0f9ebcd719c6f4cf5023c729333c"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "502019940557331",
+                        "timestamp_ms": "1796117572563",
+                        "id": "50e8e57129bd1fdad7aec6470a9c93d937",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "ya",
+                        "igd_snippet": "li",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "ya"
+                        }
+                      },
+                      "cursor": "605e2700e37b643cd382a70a4733de73f11fa53b71f267b0e1f79bbf8fd5d296605e2700e37b643cd382a70a4733de73f11fa53b71f267b0e1f79bbf8fd5d296605e"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796117565083",
+                        "id": "47f09fe77e9c7b9fed611befccf13c3e4b",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "zulu whiskey golf tango zulu zulu",
+                        "igd_snippet": "juliet bravo hotel echo lima bravo sie",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "zulu whiskey golf tango zulu zulu"
+                        }
+                      },
+                      "cursor": "6a76e8a540180111a03903841ba4b6623e58898d5b453fb17bb013f7cd6e63b66a76e8a540180111a03903841ba4b6623e58898d5b453fb17bb013f7cd6e63b66a76"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1796117553573",
+                        "id": "10c23d5cde37edf7b4c91c879d9eaa83da",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "bravo delta lima bravo sierra romeo yankee ",
+                        "igd_snippet": "mike bravo hotel echo papa yankee sierra romeo n",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "bravo delta lima bravo sierra romeo yankee "
+                        }
+                      },
+                      "cursor": "77153cd90a77f2a998bcc5e929d06dd5dcbac4d5b86483460b7977195edb61f177153cd90a77f2a998bcc5e929d06dd5dcbac4d5b86483460b7977195edb61f17715"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "db7f631258810553b9f69e1892aea91fce42410746cae4b5d3f1f3f03a299f04db7f631258810553b9f69e1892aea91fce42410746cae4b5d3f1f3f03a299f04db7f",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "lima quebec",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "8453332470"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1042545370265430",
+              "__typename": "SlideThread"
+            },
+            "cursor": "68af381f300d2a35e7228bba94cc647ba039970ca2ab7769d461cd4d3980f7b068af381f300d2a35e7228bba94cc647ba039970ca2ab7769d461cd4d3980f7b068af"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1120035815168551",
+                "last_activity_timestamp_ms": "1796017454944",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "5948411475",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "100846301412540",
+                    "full_name": "mike foxtrot",
+                    "username": "hotel echo whis",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/ce4201d8671e",
+                    "latest_reel_media": 1793637909,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "oscar quebec ya",
+                "thread_fbid": "1120035815168551",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "100846301412540",
+                    "watermark_timestamp_ms": "1795868122830"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1796017454945"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "115178594118157121559249302739141602109",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1796017454944",
+                        "id": "4d590d38a2f45e743c03a19c3b432f81b0",
+                        "__typename": "SlideMessage",
+                        "content_type": "MESSAGE_INLINE_SHARE",
+                        "text_body": "",
+                        "igd_snippet": "romeo juliet india echo t",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "92dabe51b99addf1e2dd599230475164172c50fa3ebb503a76696d55d537022992dabe51b99addf1e2dd599230475164172c50fa3ebb503a76696d55d537022992da"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795868122829",
+                        "id": "5f71734a13dc018526d496db01d262a506",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "quebec golf india bravo hotel india india echo ",
+                        "igd_snippet": "hotel india xray kilo uniform oscar foxtrot papa cha",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "quebec golf india bravo hotel india india echo "
+                        }
+                      },
+                      "cursor": "2a19062efdf160a5bf521accc20c6ed14120aba03813ec0767be5eccd2c453592a19062efdf160a5bf521accc20c6ed14120aba03813ec0767be5eccd2c453592a19"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1795866669599",
+                        "id": "40fa16471595575f0e42a3962e715b12f8",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "echo e",
+                        "igd_snippet": "yankee",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "echo e"
+                        }
+                      },
+                      "cursor": "4a3f5bcd9c92e7a5f569d5c98c9c51982ac4700f2b11c362e6376a21bc03a42d4a3f5bcd9c92e7a5f569d5c98c9c51982ac4700f2b11c362e6376a21bc03a42d4a3f"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1795866668171",
+                        "id": "854b6172799ca2546893d25767ab55e88f",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "oscar ",
+                        "igd_snippet": "hotel ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "oscar "
+                        }
+                      },
+                      "cursor": "807a9840ff4b0a38266752338ebf1861932938bfcbd27fe9d7e5a8e96094a716807a9840ff4b0a38266752338ebf1861932938bfcbd27fe9d7e5a8e96094a716807a"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1795866663893",
+                        "id": "93105b43473d56ca6e566c05b37c2f383d",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor zulu zulu whiskey s",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "4604bda78a0de487bfa380c5adf855c136e43943bf6b557c48f91606560052cc4604bda78a0de487bfa380c5adf855c136e43943bf6b557c48f91606560052cc4604"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "87ed7b73c0c91cd761edc13d5eefe6fa3d36831730863453f79bcbc4cf70140587ed7b73c0c91cd761edc13d5eefe6fa3d36831730863453f79bcbc4cf70140587ed",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "foxtrot lima",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "5948411475"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1120035815168551",
+              "__typename": "SlideThread"
+            },
+            "cursor": "40953fc09ddcdf3c06f3e8018f8d0a5044f9227efed8367c09dc2b1dfbc1b50d40953fc09ddcdf3c06f3e8018f8d0a5044f9227efed8367c09dc2b1dfbc1b50d4095"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "4449978442516723",
+                "last_activity_timestamp_ms": "1795942631835",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "3381729",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "370550179401082",
+                    "full_name": "nove",
+                    "username": "india mike ",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/2527dabb2945",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "romeo golf papa",
+                "thread_fbid": "4449978442516723",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "370550179401082",
+                    "watermark_timestamp_ms": "1795940136527"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1795942631836"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "852392008476055287392643341481313401345",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "370550179401082",
+                        "timestamp_ms": "1795942631835",
+                        "id": "ed74ec28d6073cb292fec712ee3632e146",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor zulu zulu whiskey s",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "f6d8f89271bc38e99ccf1fe9093fb3932c27622e061a541af17a52f5e75d1e5bf6d8f89271bc38e99ccf1fe9093fb3932c27622e061a541af17a52f5e75d1e5bf6d8"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795940136526",
+                        "id": "26d2af54a484bf11c8c87cd016bddb3fa1",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "bravo sierra kilo in",
+                        "igd_snippet": "lima uniform kilo mike un",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "bravo sierra kilo in"
+                        }
+                      },
+                      "cursor": "e934a347aec49aeed58fc2bebfa19cb5c2e5d996b18e7dd0ce8379c34f69b5e8e934a347aec49aeed58fc2bebfa19cb5c2e5d996b18e7dd0ce8379c34f69b5e8e934"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795940124386",
+                        "id": "6c9f8e3b365536b904dde4a066dcae2ba3",
+                        "__typename": "SlideMessage",
+                        "content_type": "IMAGES",
+                        "text_body": "",
+                        "igd_snippet": "victor delta lima",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageImageContent"
+                        }
+                      },
+                      "cursor": "4ca052d3c4275ed4b031877c8604a1a1f0acd94835b1ed1e296c3552d5d37ef94ca052d3c4275ed4b031877c8604a1a1f0acd94835b1ed1e296c3552d5d37ef94ca0"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "370550179401082",
+                        "timestamp_ms": "1795889716909",
+                        "id": "3509e1dee19b9b4a106d3acd6590fbe9bb",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "quebec uniform romeo yankee delt",
+                        "igd_snippet": "foxtrot echo papa uniform romeo ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "quebec uniform romeo yankee delt"
+                        }
+                      },
+                      "cursor": "eeaef3ed853001bb7993ce93b61508fe8e091b22bbdeb6fa8c7d05d879714385eeaef3ed853001bb7993ce93b61508fe8e091b22bbdeb6fa8c7d05d879714385eeae"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "370550179401082",
+                        "timestamp_ms": "1795889708818",
+                        "id": "1d0098d9b8202cf093f210a28f8350463d",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "hotel tango ",
+                        "igd_snippet": "victor oscar",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "hotel tango "
+                        }
+                      },
+                      "cursor": "7dc6fe1b2762733aa70d1f28430e130cc362943ea66fa269e87aa54d2d09dced7dc6fe1b2762733aa70d1f28430e130cc362943ea66fa269e87aa54d2d09dced7dc6"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "1693e791cbbe667f5c7bb9257f79a9a8a552e9aa7a7785df3fd037cfb12610b01693e791cbbe667f5c7bb9257f79a9a8a552e9aa7a7785df3fd037cfb12610b01693",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "whis",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "3381729"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "4449978442516723",
+              "__typename": "SlideThread"
+            },
+            "cursor": "3299f4cb10f0c2145ba0e24ec979b4b797ceb9f5539079493e344f5378b8752c3299f4cb10f0c2145ba0e24ec979b4b797ceb9f5539079493e344f5378b8752c3299"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "1910423345420610",
+                "last_activity_timestamp_ms": "1795867845526",
+                "folder": "PRIMARY",
+                "thread_subtype": "uniform r",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "188535431",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "553648881259974",
+                    "full_name": "india ",
+                    "username": "zulu delt",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/d8abc054dc62",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  },
+                  {
+                    "ai_agent_type": null,
+                    "id": "3051228154",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "402610133415773",
+                    "full_name": "kilo xray hot",
+                    "username": "lima mike",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/684cb633942a",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  },
+                  {
+                    "ai_agent_type": null,
+                    "id": "5948411475",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "100846301412540",
+                    "full_name": "mike foxtrot",
+                    "username": "hotel echo whis",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/ce4201d8671e",
+                    "latest_reel_media": 1793637909,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "november novembe",
+                "thread_fbid": "1910423345420610",
+                "is_group": true,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "100846301412540",
+                    "watermark_timestamp_ms": "1795865893391"
+                  },
+                  {
+                    "participant_fbid": "553648881259974",
+                    "watermark_timestamp_ms": "1795865941309"
+                  },
+                  {
+                    "participant_fbid": "402610133415773",
+                    "watermark_timestamp_ms": "1795866001952"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1795867845526"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "234547324920624356413945661306808549150",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "553648881259974",
+                        "timestamp_ms": "1795867845526",
+                        "id": "d56e6ba0005f0710386816620dc418c030",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "uniform zulu lima quebec uniform cha",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "e1d99825421af4226c76f5612b96e3eb8051a52c49c9191788f08d59fadcfb06e1d99825421af4226c76f5612b96e3eb8051a52c49c9191788f08d59fadcfb06e1d9"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1795865941309",
+                        "id": "0df5bbbea8de77a9ddd10a635ae6d6a5e6",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "yankee",
+                        "igd_snippet": "juliet mike foxtrot lim",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "yankee"
+                        }
+                      },
+                      "cursor": "46b551f2f0d55d657ed729e1a2b06e9bf4c100690f5a8f4e2db8b961fe966edd46b551f2f0d55d657ed729e1a2b06e9bf4c100690f5a8f4e2db8b961fe966edd46b5"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "402610133415773",
+                        "timestamp_ms": "1795865893391",
+                        "id": "fd84ccca129981ef190b6dde28ecb8c750",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "uniform victor romeo golf india echo alpha oscar yankee del",
+                        "igd_snippet": "india india xray kilo xray zulu hotel india echo papa juliet bravo lim",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "uniform victor romeo golf india echo alpha oscar yankee del"
+                        }
+                      },
+                      "cursor": "2d8d5d4ab88216a311ab8210b18d83ae02a09bfaa16a0826c20bf731da34a86d2d8d5d4ab88216a311ab8210b18d83ae02a09bfaa16a0826c20bf731da34a86d2d8d"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "402610133415773",
+                        "timestamp_ms": "1795865866166",
+                        "id": "811006a8d506b4e777d3e3fdb762dc2fa1",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "charlie echo echo whiskey delta whis",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "65ae85ab66f677d8a556ddbd1983e8fcb6762e929ce555becbe8293733f14a9c65ae85ab66f677d8a556ddbd1983e8fcb6762e929ce555becbe8293733f14a9c65ae"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "100846301412540",
+                        "timestamp_ms": "1795865679757",
+                        "id": "a6c1edc16d8aadb8ff72d16f0dce52288f",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "papa romeo romeo vi",
+                        "igd_snippet": "oscar foxtrot tango zulu hotel tango",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "papa romeo romeo vi"
+                        }
+                      },
+                      "cursor": "3d8753e4af6259f288d0810992a567b522555131ac147f92a8499a1037c4b8673d8753e4af6259f288d0810992a567b522555131ac147f92a8499a1037c4b8673d87"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "b6fcab0c2ffb0d0f845fd52c45edbffdb71b84c6414d67bd049a75531cd207b9b6fcab0c2ffb0d0f845fd52c45edbffdb71b84c6414d67bd049a75531cd207b9b6fc",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "delta lima juliet xray sierra romeo ju",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "188535431"
+                  },
+                  {
+                    "is_internal_user": null,
+                    "id": "3051228154"
+                  },
+                  {
+                    "is_internal_user": null,
+                    "id": "5948411475"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "1910423345420610",
+              "__typename": "SlideThread"
+            },
+            "cursor": "c61dcaac1de59da7d6a8c26b26ea6f936daaeafa754b1e857fc5ddb179250675c61dcaac1de59da7d6a8c26b26ea6f936daaeafa754b1e8"
+          },
+          {
+            "node": {
+              "as_ig_direct_thread": {
+                "id": "7833355333412563",
+                "last_activity_timestamp_ms": "1795847130458",
+                "folder": "PRIMARY",
+                "thread_subtype": "victor romeo romeo",
+                "users": [
+                  {
+                    "ai_agent_type": null,
+                    "id": "188535431",
+                    "friendship_status": {
+                      "blocking": false,
+                      "is_restricted": false
+                    },
+                    "supervision_info": null,
+                    "interop_messaging_user_fbid": "553648881259974",
+                    "full_name": "india ",
+                    "username": "zulu delt",
+                    "is_verified": false,
+                    "aigm_account_label_info": {
+                      "attribution_label_text": null,
+                      "is_auto_detected": false,
+                      "is_enabled": false,
+                      "is_manually_enabled": false
+                    },
+                    "profile_pic_url": "https://example.com/d8abc054dc62",
+                    "latest_reel_media": 0,
+                    "latest_besties_reel_media": 0,
+                    "reel_media_seen_timestamp": null
+                  }
+                ],
+                "thread_key": "zulu whiskey zu",
+                "thread_fbid": "7833355333412563",
+                "is_group": false,
+                "marked_as_unread": false,
+                "slide_read_receipts": [
+                  {
+                    "participant_fbid": "553648881259974",
+                    "watermark_timestamp_ms": "1795840083071"
+                  },
+                  {
+                    "participant_fbid": "221702580660564",
+                    "watermark_timestamp_ms": "1795847130459"
+                  }
+                ],
+                "is_pin": false,
+                "thread_label": 0,
+                "input_mode": 0,
+                "viewer_id": "290531230",
+                "nicknames": [],
+                "thread_id": "257742023037030084403512130655401818039",
+                "slide_messages": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sender_fbid": "553648881259974",
+                        "timestamp_ms": "1795847130458",
+                        "id": "8c8ccd22d2bb4b324d1279cab9a1bab1d8",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor zulu zulu whiskey s",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "f1a87db1a3e313c4df8a6af18fdb03b701041c0dc7e119f96aa97cd862b3303df1a87db1a3e313c4df8a6af18fdb03b701041c0dc7e119f96aa97cd862b3303df1a8"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795840083070",
+                        "id": "843a4c268ef0e52d2231f728c1529c60d9",
+                        "__typename": "SlideMessage",
+                        "content_type": "MONTAGE_SHARE_XMA",
+                        "text_body": "papa uniform ",
+                        "igd_snippet": "zulu sierra yankee",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageXMAContent"
+                        }
+                      },
+                      "cursor": "0800d4e44ad3775d571946fe0f8287b898ace56459a70fb2be49dcb26a2de9ea0800d4e44ad3775d571946fe0f8287b898ace56459a70fb2be49dcb26a2de9ea0800"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795320360358",
+                        "id": "b575b3523f4e2c6d2f6f9e0d47c0d16ada",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "romeo charlie whis",
+                        "igd_snippet": "tango november november",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "romeo charlie whis"
+                        }
+                      },
+                      "cursor": "4e16ad11d5252e224f9a1c161ede7d34dbbe5ba6ad035c1f3486932e1b84cfab4e16ad11d5252e224f9a1c161ede7d34dbbe5ba6ad035c1f3486932e1b84cfab4e16"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "221702580660564",
+                        "timestamp_ms": "1795320340527",
+                        "id": "33ec7ae6969b6ebbc7cbce32867ca09e30",
+                        "__typename": "SlideMessage",
+                        "content_type": "TEXT",
+                        "text_body": "india xray kilo xray oscar charlie whiskey kilo bravo ho",
+                        "igd_snippet": "whiskey oscar yankee kilo mike juliet foxtrot xray kilo mike ",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageText",
+                          "text_body": "india xray kilo xray oscar charlie whiskey kilo bravo ho"
+                        }
+                      },
+                      "cursor": "a1af9c8d5aa769b4462dcb1b019cddfb0b6b2e5e49872ebc8cf5d37b638834bea1af9c8d5aa769b4462dcb1b019cddfb0b6b2e5e49872ebc8cf5d37b638834bea1af"
+                    },
+                    {
+                      "node": {
+                        "sender_fbid": "553648881259974",
+                        "timestamp_ms": "1795320330486",
+                        "id": "3364619ee04dc2745f8a5a7b6d73c83ca5",
+                        "__typename": "SlideMessage",
+                        "content_type": "REACTION_LOG_XMAT",
+                        "text_body": null,
+                        "igd_snippet": "victor victor v",
+                        "expiration_timestamp_ms": null,
+                        "view_expiration_timestamp_ms": null,
+                        "content": {
+                          "__typename": "SlideMessageAdminText"
+                        }
+                      },
+                      "cursor": "9a05b4835017f3a8d710228e741d1b48e13bf357233c1913b38d0fd6e7d1b71d9a05b4835017f3a8d710228e741d1b48e13bf357233c1913b38d0fd6e7d1b71d9a05"
+                    }
+                  ],
+                  "page_info": {
+                    "end_cursor": "2052695840dd2457532e1e597a7ac71e950d9e34ad34a454d89baa12d284f4a62052695840dd2457532e1e597a7ac71e950d9e34ad34a454d89baa12d284f4a62052",
+                    "has_next_page": true
+                  }
+                },
+                "thread_title": "oscar ",
+                "usersWithoutViewer": [
+                  {
+                    "is_internal_user": null,
+                    "id": "188535431"
+                  }
+                ],
+                "viewer": {
+                  "id": "290531230",
+                  "interop_messaging_user_fbid": "221702580660564",
+                  "profile_pic_url": "https://example.com/09b50fc7727d"
+                },
+                "thread_image_url": null,
+                "messaging_folder_tag": "unifo",
+                "ig_direct_event": null,
+                "is_muted": false,
+                "takedown_data": null,
+                "system_folder": "quebe"
+              },
+              "id": "7833355333412563",
+              "__typename": "SlideThread"
+            },
+            "cursor": "29fee880650e7ec25adb3a4a4d45db1dfbd22b8ad5d701e5e24162faaafcf28129fee880650e7ec25adb3a4a4d45db1dfbd22b8ad5d701e5e24162faaafcf28129fe"
+          }
+        ],
+        "page_info": {
+          "end_cursor": "479c133084303e1a2f90b7db63022c6a95b9f9092e3832945b36e11c16a49a30479c133084303e1a2f90b7db63022c6a95b9f9092e3832945b36e11c16a49a30479c",
+          "has_next_page": true
+        }
+      },
+      "id": "221702580660564",
+      "pinned_threads_v2": []
+    }
+  },
+  "extensions": {
+    "server_metadata": {
+      "request_start_time_ms": 1796655974531,
+      "time_at_flush_ms": 1796655974790
+    },
+    "is_final": true
+  }
+}
