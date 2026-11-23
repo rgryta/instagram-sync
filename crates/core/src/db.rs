@@ -53,6 +53,10 @@ pub const MIGRATIONS: &[(&str, &str)] = &[
         "0008_one_id_per_message.sql",
         include_str!("../../../db-migrations/pg/0008_one_id_per_message.sql"),
     ),
+    (
+        "0009_voice_transcripts.sql",
+        include_str!("../../../db-migrations/pg/0009_voice_transcripts.sql"),
+    ),
 ];
 
 const SCHEMA_MIGRATION_DDL: &str = "

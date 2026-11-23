@@ -24,7 +24,7 @@ use sqlx::PgPool;
 use crate::config::IngestSettings;
 use crate::listen::Nudge;
 use crate::source::Source;
-use crate::{IngestError, backfill, normalize, poll};
+use crate::{IngestError, backfill, normalize, poll, voice};
 
 /// The sleep before the next pass, jittered by up to `poll_jitter` either way, and
 /// never under a minute. A metronome is a machine signature.
@@ -214,9 +214,28 @@ impl Runner {
                 );
             }
         }
+
+        if !quick {
+            // Fresh links for voice messages whose link expired, from what the day's
+            // ceiling has left: a page each, and a backlog spreads over passes.
+            let today = Utc::now().date_naive();
+            let left = (settings.backfill_daily_requests
+                - store::backfill_spent(pool, account_id, today).await?)
+                .max(0);
+            let requests =
+                voice::relink_once(pool, source, account_id, RELINK_PER_PASS.min(left)).await?;
+            if requests > 0 {
+                let spent = i64::try_from(requests).unwrap_or(i64::MAX);
+                store::spend_backfill(pool, account_id, today, spent).await?;
+                tracing::info!("voice links: {requests} requests");
+            }
+        }
         Ok(())
     }
 }
+
+/// Voice messages relinked per full pass at most.
+const RELINK_PER_PASS: i64 = 20;
 
 async fn record_failure(pool: &PgPool, account_id: &str, error: &str) {
     if let Err(e) = store::record_sync(pool, account_id, "poll", None, Some(error)).await {

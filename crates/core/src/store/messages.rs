@@ -31,6 +31,7 @@ fn message_from_row(row: &PgRow) -> Result<Message, sqlx::Error> {
         // Deliberately strict. Tolerating a bare string here is what hid slack-sync's
         // double-encoding bug: the decode undid the extra encode and only SQL noticed.
         reactions: row.try_get::<Json<Vec<Reaction>>, _>("reactions")?.0,
+        transcript: row.try_get("transcript")?,
     })
 }
 
@@ -207,7 +208,8 @@ pub async fn search_messages(
                ",
         text_rank!(),
         " AS rank,
-               ts_headline('simple_fold', text, websearch_to_tsquery('simple_fold', $1),
+               ts_headline('simple_fold', coalesce(nullif(text, ''), transcript, ''),
+                           websearch_to_tsquery('simple_fold', $1),
                            'MaxFragments=1,MaxWords=25,MinWords=8') AS snippet
           FROM message
          WHERE ",

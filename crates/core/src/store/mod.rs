@@ -35,7 +35,7 @@ macro_rules! message_columns {
     () => {
         "account_id, thread_id, item_id, ts, sender_id, item_type, text, \
          share_kind, share_owner, share_caption, share_permalink, reply_to_item_id, \
-         reactions, deleted_at, \
+         reactions, deleted_at, transcript, \
          EXISTS (SELECT 1 FROM message_revision v \
                   WHERE v.account_id = message.account_id \
                     AND v.thread_id = message.thread_id \
@@ -113,6 +113,7 @@ mod ingest;
 mod messages;
 mod people;
 mod threads;
+mod voice;
 
 pub use accounts::{account_status, sync_loops};
 pub use aliases::{delete_alias, list_aliases, set_alias};
@@ -130,6 +131,10 @@ pub use messages::{
 };
 pub use people::{find_people, resolve_people};
 pub use threads::{ThreadPage, list_threads};
+pub use voice::{
+    ExpiredVoice, WaitingVoice, expired_voice, give_up_voice, relink_voice, set_transcript,
+    waiting_voice,
+};
 
 /// Accented letters [`fold`] and `folded!` map to plain ones, char for char.
 pub const FOLD_FROM: &str = fold_from!();

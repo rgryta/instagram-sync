@@ -55,6 +55,8 @@ pub struct Message {
     pub share_permalink: Option<String>,
     pub reply_to_item_id: Option<String>,
     pub reactions: Vec<Reaction>,
+    /// A voice message's words, as whisper heard them; never typed.
+    pub transcript: Option<String>,
 }
 
 /// One `(account, person)` pair. Alias resolution returns a set of these.
