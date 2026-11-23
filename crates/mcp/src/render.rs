@@ -171,6 +171,10 @@ pub fn body_of(message: &Message) -> String {
     if message.share_kind.is_some() {
         return share_body(message);
     }
+    // Heard, not typed: quoted, so it never reads as something the sender wrote.
+    if let Some(words) = message.transcript.as_deref().filter(|w| !w.is_empty()) {
+        return format!("[voice] \u{201c}{words}\u{201d}");
+    }
     if message.text.is_empty() {
         // A photo, a disappearing image, a video call: nothing was typed and nothing
         // was projected, so the type is the only content there is. It beats a blank
@@ -625,7 +629,23 @@ mod tests {
             share_permalink: None,
             reply_to_item_id: None,
             reactions: Vec::new(),
+            transcript: None,
         }
+    }
+
+    #[test]
+    fn a_transcribed_voice_message_shows_its_words_quoted() {
+        let voice = Message {
+            item_type: "AUDIOS".into(),
+            text: String::new(),
+            ..message()
+        };
+        assert_eq!(body_of(&voice), "[AUDIOS]");
+        let heard = Message {
+            transcript: Some("see you at five".into()),
+            ..voice
+        };
+        assert_eq!(body_of(&heard), "[voice] \u{201c}see you at five\u{201d}");
     }
 
     #[test]

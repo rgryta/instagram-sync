@@ -20,6 +20,7 @@ use instagram_ingest::normalize;
 use instagram_ingest::poll::{POLL_PAGES, PollTally, poll_once};
 use instagram_ingest::runner::{self, Runner};
 use instagram_ingest::source::Source;
+use instagram_ingest::voice::{audio_url, relink_once};
 use serde_json::{Map, Value, json};
 use sqlx::postgres::PgPool;
 
@@ -996,3 +997,102 @@ db_test!(no_jar_anywhere_is_none_rather_than_an_error, |f| {
             .is_none()
     );
 });
+
+// ------------------------------------------------------------------------- voice links
+
+/// A voice message as GraphQL sends it, its audio behind `url`.
+fn voice(n: i64, url: &str) -> Value {
+    let mut raw = item(n);
+    raw["content_type"] = json!("AUDIOS");
+    raw["text_body"] = Value::Null;
+    raw["content"] = json!({"audio_attachments": [{"attachment_cdn_url": url}]});
+    raw
+}
+
+async fn voice_state(pool: &PgPool, item_id: &str) -> (Option<String>, Option<String>) {
+    sqlx::query_as("SELECT transcript_status, voice_url FROM message WHERE item_id = $1")
+        .bind(item_id)
+        .fetch_one(pool)
+        .await
+        .unwrap()
+}
+
+db_test!(
+    an_expired_voice_link_is_refreshed_from_the_page_that_holds_it,
+    |f| {
+        // Newest first: a voice message on top, one in the middle, and a text message.
+        let thread = vec![
+            voice(5, "https://cdn.invalid/fresh-5"),
+            item(4),
+            voice(3, "https://cdn.invalid/fresh-3"),
+            item(2),
+            voice(1, "https://cdn.invalid/fresh-1"),
+            item(0),
+        ];
+        // One page stores the whole thread; the re-reads then see two messages a page.
+        let mut fake = fake(vec![FakeThread::new("T1", thread).settled()], 10);
+        seed(&fake, &f.pool).await;
+        poll(&f.pool, &mut fake, 20, 0).await;
+        fake.page_size = 2;
+        // Gone from Instagram's side since: no page carries a link for it any more.
+        fake.thread_mut("T1").items[4] = item(1);
+        // All three came back refused by the CDN.
+        sqlx::query(
+            "UPDATE message SET transcript_status = 'expired' \
+              WHERE item_id IN ('item-0005', 'item-0003', 'item-0001')",
+        )
+        .execute(&f.pool)
+        .await
+        .unwrap();
+        fake.calls.clear();
+
+        let requests = relink_once(&f.pool, &mut fake, ACCOUNT, 20).await.unwrap();
+
+        assert_eq!(requests, 3, "one page each");
+        // The newest is on the newest page; the others start the page older than the
+        // message after them.
+        let asked: Vec<(&str, Option<&str>)> = fake
+            .calls
+            .iter()
+            .filter(|c| c.endpoint != "inbox")
+            .map(|c| (c.endpoint, c.until.as_deref()))
+            .collect();
+        assert_eq!(
+            asked,
+            vec![
+                ("thread", None),
+                ("older", Some("item-0004")),
+                ("older", Some("item-0002")),
+            ]
+        );
+        assert_eq!(
+            voice_state(&f.pool, "item-0005").await,
+            (None, Some("https://cdn.invalid/fresh-5".into()))
+        );
+        assert_eq!(
+            voice_state(&f.pool, "item-0003").await,
+            (None, Some("https://cdn.invalid/fresh-3".into()))
+        );
+        assert_eq!(
+            voice_state(&f.pool, "item-0001").await,
+            (Some("failed".into()), None)
+        );
+        assert!(
+            store::waiting_voice(&f.pool, 20)
+                .await
+                .unwrap()
+                .iter()
+                .all(|v| v.voice_url.is_some()),
+            "only the relinked two wait for the worker"
+        );
+    }
+);
+
+#[test]
+fn a_voice_link_is_read_from_either_era() {
+    let graphql = json!({"content": {"audio_attachments": [{"attachment_cdn_url": "https://a"}]}});
+    let rest = json!({"voice_media": {"media": {"audio": {"audio_src": "https://b"}}}});
+    assert_eq!(audio_url(&graphql).as_deref(), Some("https://a"));
+    assert_eq!(audio_url(&rest).as_deref(), Some("https://b"));
+    assert_eq!(audio_url(&json!({"content": {}})), None);
+}

@@ -20,6 +20,8 @@ chrono.workspace = true
 instagram-client = { path = "../instagram" }
 instagram-core.workspace = true
 rand = "0.10.3"
+# The transcription worker: the audio from the CDN, the words from whisper.
+reqwest = { version = "0.12.28", default-features = false, features = ["rustls-tls-webpki-roots", "http2", "multipart"] }
 serde_json.workspace = true
 sqlx.workspace = true
 thiserror.workspace = true

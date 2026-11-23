@@ -4,7 +4,9 @@
 //! once from `INSTAGRAM_COOKIES_FROM`), then polls and backfills forever. A session
 //! Instagram rejects is recorded and retried after `INSTAGRAM_AUTH_RETRY` seconds rather
 //! than ending the process. Beside the loop, the live socket nudges it into a quick pass
-//! whenever the inbox changes.
+//! whenever the inbox changes, and a worker transcribes voice messages through the
+//! whisper.cpp server at `INSTAGRAM_WHISPER_URL` (`http://whisper-cpp:8080` by default, the
+//! one messenger-sync and whatsapp-sync use).
 
 use std::process::ExitCode;
 use std::sync::Arc;
@@ -17,6 +19,7 @@ use instagram_ingest::listen::{self, Nudge};
 use instagram_ingest::ratelimit::TokenBucket;
 use instagram_ingest::runner;
 use instagram_ingest::source::WebSource;
+use instagram_ingest::voice;
 
 #[tokio::main]
 async fn main() -> ExitCode {
@@ -84,6 +87,9 @@ async fn main() -> ExitCode {
             return ExitCode::FAILURE;
         }
     };
+    let whisper =
+        std::env::var("INSTAGRAM_WHISPER_URL").unwrap_or_else(|_| "http://whisper-cpp:8080".into());
+    tokio::spawn(voice::Worker::new(pool.clone(), &whisper).run(voice::INTERVAL));
     let nudge = Arc::new(Nudge::default());
     tokio::spawn(listen::listen(
         pool.clone(),

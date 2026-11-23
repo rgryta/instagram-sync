@@ -8,6 +8,7 @@ pub mod poll;
 pub mod ratelimit;
 pub mod runner;
 pub mod source;
+pub mod voice;
 
 use instagram_client::web::WebError;
 
